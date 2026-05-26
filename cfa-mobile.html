@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>中山大学岭南学院·2026级商业策划大赛 | CFA深圳协会定制合作方案</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+        body {
+            background: #eef2f8;
+            font-family: 'PingFang SC', 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            padding: 0;
+            color: #1a2a3a;
+        }
+        .doc {
+            max-width: 750px;
+            margin: 0 auto;
+            background: #ffffff;
+            overflow: hidden;
+        }
+
+        /* ========== 页眉 ========== */
+        .header {
+            background-color: #002b4f;
+            color: white;
+            border-bottom: 4px solid #d4af37;
+            text-align: center;
+        }
+        .header-banner {
+            width: 100%;
+            display: block;
+            border-bottom: 2px solid #d4af37;
+        }
+        .header-text {
+            padding: 20px 16px 24px;
+        }
+        .header h1 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .header h2 {
+            font-size: 16px;
+            font-weight: 500;
+            opacity: 0.92;
+            margin-bottom: 8px;
+        }
+        .header h3 {
+            font-size: 14px;
+            font-weight: 400;
+            opacity: 0.88;
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+        .header-badge {
+            background: #d4af37;
+            color: #002b4f;
+            display: inline-block;
+            padding: 5px 14px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 12px;
+            margin-top: 12px;
+        }
+        /* CFA定制标识 */
+        .cfa-tag {
+            background: #1a5fa8;
+            color: #fff;
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 12px;
+            margin-top: 8px;
+            margin-left: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        /* ========== 内容区 ========== */
+        .content {
+            padding: 20px 16px 24px;
+        }
+        .info-box {
+            background: #f0f7fe;
+            border-left: 4px solid #0077be;
+            padding: 14px 16px;
+            margin: 0 0 20px;
+            border-radius: 12px;
+            font-size: 14px;
+            line-height: 1.65;
+        }
+        .info-box strong { color: #003057; }
+
+        /* CFA专属致辞盒 */
+        .cfa-box {
+            background: linear-gradient(135deg, #e8f0fb 0%, #f0f7fe 100%);
+            border-left: 4px solid #1a5fa8;
+            padding: 14px 16px;
+            margin: 0 0 20px;
+            border-radius: 12px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        .cfa-box strong { color: #1a3a6e; }
+
+        /* ========== 标题体系 ========== */
+        .section-title {
+            font-size: 19px;
+            font-weight: 800;
+            color: #003057;
+            border-left: 5px solid #d4af37;
+            padding-left: 14px;
+            margin: 28px 0 16px;
+            line-height: 1.4;
+        }
+        .subsection-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #1e4663;
+            margin: 24px 0 12px;
+            border-bottom: 2px solid #e5eef5;
+            padding-bottom: 6px;
+        }
+        .subsub-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #004b7c;
+            margin: 16px 0 8px;
+        }
+
+        /* ========== 段落与列表 ========== */
+        p {
+            margin-bottom: 0.85rem;
+            text-align: justify;
+            line-height: 1.65;
+            font-size: 14px;
+        }
+        ul, ol { margin: 0.5rem 0 0.85rem 1.4rem; font-size: 14px; }
+        li { margin: 0.3rem 0; line-height: 1.6; }
+
+        /* ========== 赞助商卡片（竖向堆叠）========== */
+        .sponsor-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 16px 0;
+        }
+        .sponsor-card {
+            background: #f9fbfe;
+            border-radius: 14px;
+            padding: 14px 16px;
+            border: 1px solid #dfe8f0;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .sponsor-card strong {
+            font-size: 14px;
+            color: #003057;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* ========== CFA合作包卡片 ========== */
+        .cfa-package {
+            background: linear-gradient(135deg, #1a3a6e 0%, #1a5fa8 100%);
+            color: white;
+            border-radius: 18px;
+            padding: 20px 18px;
+            margin: 16px 0;
+        }
+        .cfa-package h3 {
+            font-size: 17px;
+            font-weight: 800;
+            margin-bottom: 14px;
+            letter-spacing: 0.3px;
+        }
+        .cfa-package-item {
+            background: rgba(255,255,255,0.12);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .cfa-package-item:last-child { margin-bottom: 0; }
+        .cfa-package-item .item-label {
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 3px;
+            display: block;
+        }
+
+        /* ========== 卡片（赛道等）========== */
+        .card-grid, .flex-rows {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin: 16px 0;
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #e2ecf5;
+            border-radius: 16px;
+            padding: 16px;
+        }
+        .card.cfa-track-a {
+            border-color: #1a5fa8;
+            border-left: 4px solid #1a5fa8;
+        }
+        .card.cfa-track-b {
+            border-color: #d4af37;
+            border-left: 4px solid #d4af37;
+        }
+        .card h4 {
+            font-size: 15px;
+            color: #003057;
+            border-left: 4px solid #d4af37;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            line-height: 1.45;
+        }
+        .card.cfa-track-a h4 { border-left-color: #1a5fa8; }
+        .card p { font-size: 13px; margin-bottom: 0; }
+        .track-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .track-badge-blue { background: #e0eaf8; color: #1a3a6e; }
+        .track-badge-gold { background: #fff3cd; color: #7a5900; }
+
+        /* ========== 表格（横向滚动）========== */
+        .table-scroll {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 16px 0;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            min-width: 340px;
+        }
+        th, td {
+            border: 1px solid #d9e1ec;
+            padding: 10px 12px;
+            vertical-align: top;
+            line-height: 1.55;
+        }
+        th {
+            background: #eef3fc;
+            font-weight: 700;
+            color: #00263b;
+            font-size: 13px;
+        }
+        td { font-size: 12px; }
+
+        /* ========== 图库（单列瀑布流）========== */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+            margin: 16px 0;
+        }
+        .gallery-item {
+            background: #fefefe;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            border: 1px solid #e9edf2;
+        }
+        .gallery-img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+            background: #eef2f5;
+        }
+        .gallery-caption {
+            padding: 10px 14px 12px;
+            font-size: 13px;
+            color: #2c4c6e;
+            font-weight: 500;
+            text-align: center;
+            border-top: 1px solid #eff3f8;
+        }
+
+        /* ========== 其他元素 ========== */
+        .badge {
+            background: #eef2fa;
+            color: #003468;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 10px;
+            display: inline-block;
+            margin: 4px 0 8px;
+        }
+        .highlight {
+            background: #fef8e7;
+            border-left: 3px solid #f5b042;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin: 12px 0;
+            font-size: 13px;
+        }
+        .note-text {
+            background: #f9fafc;
+            padding: 6px 14px;
+            border-radius: 32px;
+            display: inline-block;
+            font-size: 12px;
+            color: #5f7d9c;
+            margin-bottom: 14px;
+        }
+        .theme-line {
+            clear: both;
+            margin-bottom: 10px;
+        }
+        .gold { background: #fff9e8; border-left: 4px solid #d4af37; }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #5f7d9c;
+            border-top: 1px solid #e2ecf5;
+            padding-top: 20px;
+            margin-top: 28px;
+        }
+
+        /* ========== 宽表格 ========== */
+        .wide-table {
+            min-width: 580px;
+        }
+
+        /* ========== 机密提示条 ========== */
+        .confidential-bar {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: 12px;
+            color: #7a5900;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="doc">
+    <img class="header-banner" src="https://s41.ax1x.com/2026/05/25/pmChCyF.png" alt="中山大学岭南学院商业策划大赛">
+    <div class="header">
+        <div class="header-text">
+            <h1>中山大学岭南学院 · 2026级数字经济硕士</h1>
+            <h2>新生入学导向活动 · 商业策划大赛</h2>
+            <h3>"数智引擎，无界创变"——2026年商创未来榜（拟）</h3>
+            <h3>☏ 招商洽谈：学联外联部部长 邱梓涛：13288778829（微信同号）</h3>
+            <div class="header-badge">CFA深圳协会 · 定制合作方案</div>
+            <div class="cfa-tag">🎓 专项定制版</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="confidential-bar">📌 本方案为点对点沟通文件，仅供 CFA深圳协会 负责人参阅</div>
+
+        <div class="cfa-box">
+            <strong>致 CFA深圳协会：</strong><br>
+            中山大学岭南学院的新生商业策划大赛是华南地区最具影响力的MBA/MDE新生商业实战赛事，2026级赛事深度聚焦<strong>数字经济与AI应用、投资与财富管理</strong>，覆盖金融、科技、文旅、能源等领域。<br><br>
+            我们诚挚邀请 <strong>CFA深圳协会</strong> 作为本届大赛的<strong>联合承办合作伙伴与学术支持机构</strong>，共同打造一场专业级、有影响力的金融实战赛事，实现双方资源互补与品牌共赢。
+        </div>
+
+        <!-- 一、赞助核心价值 -->
+        <div class="section-title">一、赞助商核心价值</div>
+        <div class="sponsor-grid">
+            <div class="sponsor-card"><strong>🎯 精准触达高端金融精英</strong>约200多名中大校友（含180名数字经济硕士新生），工作经验10年左右，多为金融、科技、制造等领域的中高层管理者，是CFA考试的高潜力目标群体及高净值客群。</div>
+            <div class="sponsor-card"><strong>🏛️ 顶级商学院背书</strong>岭南学院拥有AACSB国际认证，CFA协会与岭南学院的深度合作可实现双品牌背书，显著提升在华南地区金融精英圈的认知度与影响力。</div>
+            <div class="sponsor-card"><strong>📈 可落地金融实战方案</strong>以CFA命题方向为赛道，选手提供量化投资、AI投资组合、绿色金融等可落地方案，优秀案例可作为协会课程案例或内容推广素材。</div>
+            <div class="sponsor-card"><strong>📢 全媒体曝光矩阵</strong>官方公众号、视频号、校友社群、小红书、财经媒体等联合报道，覆盖大湾区数十万商界人群，高密度触达CFA目标考生群体。</div>
+        </div>
+
+        <!-- 二、CFA定制合作方案 -->
+        <div class="section-title">二、CFA深圳协会定制合作方案</div>
+        <p>经双方初步沟通，本次合作拟采用<strong>现金赞助+资源置换</strong>的组合形式，具体方案如下：</p>
+
+        <div class="cfa-package">
+            <h3>🤝 CFA深圳协会 · 联合承办合作包</h3>
+            <div class="cfa-package-item">
+                <span class="item-label">💰 现金赞助</span>
+                人民币 <strong>3万元</strong>（用于场地、奖品、宣传物料等赛事运营支出）
+            </div>
+            <div class="cfa-package-item">
+                <span class="item-label">🎓 CFA考试费减免名额（资源置换）</span>
+                向优胜组（1-2个组别）提供 CFA 考试报名费减免，每组折合约 <strong>1-1.5万元</strong>，激励选手参与CFA认证
+            </div>
+            <div class="cfa-package-item">
+                <span class="item-label">📊 Wind金融终端VIP年卡（资源置换）</span>
+                向优胜组（1-2个组别）提供 <strong>Wind VIP年卡</strong>，作为专业金融数据工具奖励，与赛事金融实战主题高度匹配
+            </div>
+        </div>
+
+        <p class="highlight">💡 <strong>合计价值约：4-5万元（含现金+资源）</strong>，对应联合承办合作等级，享有赛道命题权、评委席位、全媒体曝光等核心权益（详见下方权益表）。</p>
+
+        <!-- 三、赞助权益 -->
+        <div class="section-title">三、CFA协会专属赞助权益</div>
+        <div class="table-scroll">
+            <table class="wide-table">
+                <thead>
+                    <tr><th style="width:30%">权益项目</th><th style="width:70%">具体内容</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>🏷️ 赛事冠名</strong></td>
+                        <td>赛道B冠名为"CFA深圳协会·金融创新赛道"，主持人口播≥3次，背景板LOGO展示</td>
+                    </tr>
+                    <tr>
+                        <td><strong>📋 赛道命题权</strong></td>
+                        <td>由CFA协会提供赛道B专业命题方向，命题可嵌入协会关注的真实金融议题</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🧑‍⚖️ 评委席位</strong></td>
+                        <td>CFA协会代表担任赛道B分评委，参与决赛答辩评审及颁奖，与参赛精英深度互动</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🎁 奖项冠名</strong></td>
+                        <td>"CFA深圳协会·最佳金融洞察奖"冠名权，颁奖环节专属呈现</td>
+                    </tr>
+                    <tr>
+                        <td><strong>📢 品牌传播</strong></td>
+                        <td>官方公众号联合推文、校友社群全程提及、赛后专题推送至全体学员</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🤝 人才对接</strong></td>
+                        <td>获得参赛选手脱敏名册，赛后可开展CFA招募宣讲或学员专属活动</td>
+                    </tr>
+                    <tr>
+                        <td><strong>📑 方案成果</strong></td>
+                        <td>获得赛道B所有优胜方案精华报告，可作为协会内容资产或课程案例</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🎓 CFA奖励宣传</strong></td>
+                        <td>在参赛手册、现场背板、公众号推文中突出展示CFA考试减免及Wind年卡奖励，激励报名并提升协会曝光</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 四、定制赛道 -->
+        <div class="section-title">四、2026大赛定制赛道设计</div>
+        <div class="subsection-title">1、整体赛道架构（CFA合作版）</div>
+        <p><strong>参赛对象扩展：</strong>设立两条并行赛道，分开评审，分开颁奖，互不影响。</p>
+        <div class="flex-rows">
+            <div class="card cfa-track-a">
+                <div class="track-badge track-badge-blue">赛道A · 2026届 MDE新生赛道</div>
+                <h4>🎓 数字经济与AI金融创新赛道</h4>
+                <p><strong>参赛对象：</strong>2026级数字经济硕士（MDE）非全日制新生，预计180人，分10组。<br><br>
+                <strong>命题方向（CFA定制）：</strong>量化投资策略与AI辅助决策；碳市场与绿色金融产品设计；AI时代个人投资组合构建；全球资产配置与汇率风险管理。<br><br>
+                <strong>奖励：</strong>CFA考试减免名额（优胜1-2组）+ Wind VIP年卡（优胜1-2组）+ 冠军奖杯</p>
+            </div>
+            <div class="card cfa-track-b">
+                <div class="track-badge track-badge-gold">赛道B · 跨届别开放赛道</div>
+                <h4>🏆 本科生·在读硕士·往届校友开放赛道</h4>
+                <p><strong>参赛对象：</strong>岭南学院/中山大学本科生、其他届别硕士学员、往届MDE/MBA校友，自由组队报名（建议3-5人/组）。<br><br>
+                <strong>命题方向（CFA定制）：</strong>保险科技在能源风险管理中的应用；碳普惠与清洁能源资产数字化；ESG投资框架下的行业筛选实践；数字货币与跨境支付创新。<br><br>
+                <strong>奖励：</strong>CFA考试减免名额（优胜1-2组）+ 冠军奖杯 + 证书</p>
+            </div>
+        </div>
+
+        <div class="subsection-title">2、大赛主题</div>
+        <div class="theme-line">
+            <p><strong>赛事主题：</strong>"数智引擎，无界创变——2026商创未来榜（拟）"</p>
+            <p>赛道A/B均可由CFA协会联合命题，真实反映金融行业前沿议题，让参赛作品具备实际参考价值。</p>
+        </div>
+
+        <!-- 五、赛程安排 -->
+        <div class="section-title">五、赛程安排</div>
+        <div class="table-scroll">
+            <table>
+                <thead><tr><th>时间节点</th><th>事项</th></tr></thead>
+                <tbody>
+                    <tr><td>8月1日-9月5日</td><td>新生分组、领取赛题、CFA宣讲（赛前安排）、方案撰写、预审反馈</td></tr>
+                    <tr><td>9月7日（ORI第三天上午）</td><td><strong>决赛路演+答辩</strong>：赛道A&B分场进行，每组10分钟演示+5分钟问答</td></tr>
+                    <tr><td>9月7日中午</td><td>午餐会暨颁奖典礼，两赛道同台颁奖，CFA协会代表出席致辞</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 六、奖项设置 -->
+        <div class="section-title">六、奖项设置（CFA合作版）</div>
+        <div class="table-scroll">
+            <table>
+                <thead><tr><th>赛道</th><th>奖项</th><th>奖励内容</th></tr></thead>
+                <tbody>
+                    <tr><td rowspan="3"><strong>赛道A</strong><br>2026届新生</td><td>冠军（1队）</td><td>ORI+10分 &amp; 奖杯 &amp; CFA考试减免（1组）&amp; Wind年卡（1组）</td></tr>
+                    <tr><td>亚军（1队）</td><td>ORI+8分 &amp; 奖杯 &amp; Wind年卡（可选）</td></tr>
+                    <tr><td>季军（1队）</td><td>ORI+6分 &amp; 奖杯 &amp; 奖品</td></tr>
+                    <tr><td rowspan="3"><strong>赛道B</strong><br>跨届别开放</td><td>冠军（1队）</td><td>奖杯 &amp; CFA考试减免（1组）&amp; Wind年卡（1组）&amp; 证书</td></tr>
+                    <tr><td>亚军（1队）</td><td>奖杯 &amp; 奖品 &amp; 证书</td></tr>
+                    <tr><td>最佳金融洞察奖</td><td>CFA深圳协会冠名奖 &amp; 证书 &amp; 奖品</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>💡 CFA考试减免及Wind VIP年卡可由CFA协会直接对接优胜队伍，灵活安排发放方式。</p>
+
+        <!-- 七、评分细则 -->
+        <div class="section-title">七、评分细则（总分100分）</div>
+        <div class="table-scroll">
+            <table>
+                <thead><tr><th>维度</th><th>分值</th><th>评委构成</th></tr></thead>
+                <tbody>
+                    <tr><td>专业性</td><td>30分</td><td>学院教授、<strong>CFA协会代表</strong>及专家</td></tr>
+                    <tr><td>完整性</td><td>20分</td><td>学院教授</td></tr>
+                    <tr><td>可行性</td><td>20分</td><td>企业高管（赞助商）</td></tr>
+                    <tr><td>创新性</td><td>15分</td><td>行业专家</td></tr>
+                    <tr><td>报告撰写质量</td><td>8分</td><td>学术组</td></tr>
+                    <tr><td>展示效果</td><td>7分</td><td>全体评委</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p><strong>加分项</strong>：采用CFA标准分析框架并提供落地方案，由CFA协会评委给予 +3分。</p>
+
+        <!-- 八、预算 -->
+        <div class="section-title">八、预算说明</div>
+        <div class="table-scroll">
+            <table>
+                <thead><tr><th>项目</th><th>预算（元）</th><th>备注</th></tr></thead>
+                <tbody>
+                    <tr><td>场地及设备</td><td>30,000</td><td>可赞助减免</td></tr>
+                    <tr><td>现场布置</td><td>5,000</td><td>可物料赞助</td></tr>
+                    <tr><td>餐饮接待</td><td>4,000</td><td>60人标准</td></tr>
+                    <tr><td>宣传物料</td><td>3,000</td><td>联合露出</td></tr>
+                    <tr><td>后勤应急</td><td>3,000</td><td></td></tr>
+                    <tr><td>比赛奖品</td><td>3,000</td><td>含CFA减免+Wind年卡（资源置换）</td></tr>
+                    <tr><td>机动预备</td><td>2,000</td><td>—</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p><strong>总计约50,000元</strong>，CFA协会以现金3万+资源置换1-1.5万的方式，可覆盖赛事主要支出。</p>
+
+        <!-- 九、往届精彩 -->
+        <div class="section-title">九、往届现场精彩瞬间</div>
+        <p style="margin-bottom: 8px;">2025年岭南学院商业策划大赛盛况回顾——精英对决、专业评审、颁奖荣耀。</p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpjF9H.jpg" alt="路演现场" loading="lazy">
+                <div class="gallery-caption">📋 决赛路演 · 团队展示方案</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpj52d.jpg" alt="评委点评" loading="lazy">
+                <div class="gallery-caption">🎤 企业高管评委深度互动</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpjqVf.jpg" alt="颁奖典礼" loading="lazy">
+                <div class="gallery-caption">🏆 冠军队伍荣耀时刻</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpjIxA.jpg" alt="赛场氛围" loading="lazy">
+                <div class="gallery-caption">🤝 赛后深度交流 · 企业-人才对接</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpjTKI.jpg" alt="赞助商品牌墙" loading="lazy">
+                <div class="gallery-caption">📢 赞助&合作伙伴展示</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpj7rt.png" alt="团队共创" loading="lazy">
+                <div class="gallery-caption">💡 深夜备战 · 跨行业思维碰撞</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            中山大学岭南学院 · 数字经济硕士项目 | 外联部<br>
+            CFA深圳协会定制合作方案 · 保密文件 · 仅供内部沟通使用<br>
+            联系人：邱梓涛 13288778829（微信同号）
+        </div>
+    </div>
+</div>
+</body>
+</html>
