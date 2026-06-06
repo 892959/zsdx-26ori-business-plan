@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>明亚保险 × 中山大学岭南学院2026级商业策划大赛 · 专属赞助方案</title>
+<style>
+  :root {
+    --bg: #0b0f15;
+    --card: #11161f;
+    --card2: #161c26;
+    --gold: #c9a96e;
+    --gold-light: #e0c78a;
+    --gold-dark: #a08040;
+    --text: #e0e0e0;
+    --text2: #a0a8b4;
+    --text3: #6a7280;
+    --accent: #f0c060;
+    --accent2: #2a3a52;
+    --border: rgba(255,255,255,0.06);
+    --radius: 16px;
+    --max-w: 800px;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  /* ── 头部 Hero ── */
+  .hero {
+    text-align: center;
+    padding: 80px 24px 60px;
+    background: linear-gradient(180deg, #0d1520 0%, var(--bg) 100%);
+    border-bottom: 1px solid rgba(201,169,110,0.15);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(201,169,110,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero .tag {
+    display: inline-block;
+    background: rgba(201,169,110,0.12);
+    color: var(--gold-light);
+    font-size: 13px;
+    padding: 6px 18px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+  .hero h1 span { color: var(--gold); }
+  .hero .sub {
+    color: var(--text2);
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .hero .divider {
+    width: 50px; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 0 auto 16px;
+  }
+
+  /* ── 容器 ── */
+  .section {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+  .section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+  .section-sub {
+    color: var(--text2);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  /* ── 卡片 ── */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    margin-bottom: 20px;
+  }
+  .card.gold {
+    border-color: rgba(201,169,110,0.25);
+    background: linear-gradient(135deg, #151c26 0%, #111820 100%);
+  }
+  .card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 14px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .card h3 .emoji { font-size: 22px; }
+  .card p, .card li {
+    color: var(--text2);
+    font-size: 14.5px;
+  }
+  .card ul { list-style: none; padding: 0; }
+  .card li {
+    padding: 5px 0;
+    padding-left: 20px;
+    position: relative;
+    color: var(--text2);
+  }
+  .card li::before {
+    content: '';
+    position: absolute; left: 0; top: 12px;
+    width: 6px; height: 6px;
+    background: var(--gold-dark);
+    border-radius: 50%;
+  }
+  .card li.at_top::before { background: var(--gold); width: 8px; height: 8px; top: 10px; }
+
+  /* ── 亮点数字 ── */
+  .highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .hl-item {
+    background: var(--card2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: center;
+  }
+  .hl-item .num {
+    font-size: 28px; font-weight: 800;
+    color: var(--gold);
+    display: block;
+  }
+  .hl-item .label {
+    font-size: 13px;
+    color: var(--text2);
+    margin-top: 4px;
+  }
+
+  /* ── 表格 ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 0;
+    font-size: 14px;
+  }
+  th {
+    text-align: left;
+    color: var(--gold);
+    font-weight: 600;
+    padding: 10px 6px 8px;
+    border-bottom: 1px solid rgba(201,169,110,0.2);
+    font-size: 13px;
+  }
+  td {
+    padding: 10px 6px;
+    color: var(--text2);
+    border-bottom: 1px solid var(--border);
+  }
+  td:first-child { color: #d0d8e0; font-weight: 500; }
+
+  /* ── 价格/核心卡片 ── */
+  .pledge-box {
+    text-align: center;
+    padding: 42px 24px;
+  }
+  .pledge-box .amount {
+    font-size: 42px; font-weight: 800;
+    color: var(--gold);
+    letter-spacing: 1px;
+  }
+  .pledge-box .desc {
+    font-size: 15px; color: var(--text2);
+    margin-top: 8px;
+  }
+  .pledge-box .extra-tag {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 8px 20px;
+    background: rgba(201,169,110,0.1);
+    border: 1px solid rgba(201,169,110,0.2);
+    border-radius: 20px;
+    color: var(--gold-light);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  /* ── 活动时间线 ── */
+  .timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .tl-item {
+    background: var(--card2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: var(--text2);
+    flex: 1 1 auto;
+    min-width: 100px;
+    text-align: center;
+  }
+  .tl-item .day { color: var(--gold); font-weight: 600; font-size: 15px; display: block; }
+
+  /* ── CTA ── */
+  .cta {
+    text-align: center;
+    padding: 60px 24px 80px;
+    background: linear-gradient(0deg, rgba(201,169,110,0.06) 0%, transparent 60%);
+    border-top: 1px solid var(--border);
+  }
+  .cta h3 { font-size: 20px; color: #fff; margin-bottom: 12px; }
+  .cta p { color: var(--text2); font-size: 15px; margin-bottom: 28px; }
+  .cta .contact {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 16px; color: var(--gold);
+    border-bottom: 1px dashed var(--gold-dark);
+    padding-bottom: 4px;
+  }
+
+  /* ── 页脚 ── */
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: var(--text3);
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+  }
+
+  /* ── 响应式 ── */
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 24px; }
+    .highlights { grid-template-columns: 1fr; }
+    .section { padding: 32px 16px; }
+    .card { padding: 20px; }
+    .pledge-box .amount { font-size: 32px; }
+    .timeline { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ HERO ═══════════ -->
+<div class="hero">
+  <div class="tag">专属定制 · 联合冠名赞助方案</div>
+  <h1>明亚保险<br>× <span>中山大学岭南学院</span></h1>
+  <p class="sub">2026级商业策划大赛 · 新生入学导向（ORI）全程合作伙伴</p>
+  <div class="divider"></div>
+</div>
+
+<!-- ═══════════ 核心方案 ═══════════ -->
+<div class="section">
+  <div class="card gold pledge-box">
+    <div class="amount">¥30,000</div>
+    <div class="desc">现金赞助</div>
+    <div class="extra-tag">🎁 + 全程活动意外险保障</div>
+    <p style="margin-top:16px; color:var(--text2); font-size:14px;">
+    覆盖全体参赛新生在 ORI 全程活动中的意外伤害保障<br>守护 200+ 未来商业精英，让安全成为赛事底色
+    </p>
+  </div>
+</div>
+
+<!-- ═══════════ 活动全景 ═══════════ -->
+<div class="section">
+  <div class="section-title">🏟️ 全程赞助覆盖 · 七大活动场景</div>
+  <div class="section-sub">从体育竞技到晚宴典礼，明亚品牌将贯穿 ORI 每一天、每一环节</div>
+
+  <div class="timeline">
+    <div class="tl-item"><span class="day">Day 1</span>🏃 体育活动</div>
+    <div class="tl-item"><span class="day">Day 1</span>🎭 团队风采展示</div>
+    <div class="tl-item"><span class="day">Day 2</span>📍 校园认知拓展</div>
+    <div class="tl-item"><span class="day">Day 2</span>🧠 沙盘模拟</div>
+    <div class="tl-item"><span class="day">Day 3</span>📊 商业策划大赛</div>
+    <div class="tl-item"><span class="day">Day 3</span>🎬 Volo 视频展示</div>
+    <div class="tl-item"><span class="day">Night 3</span>🥂 颁奖晚宴</div>
+  </div>
+</div>
+
+<!-- ═══════════ 权益明细 ═══════════ -->
+<div class="section">
+  <div class="section-title">🎯 专属权益明细</div>
+  <div class="section-sub">基于联合冠名赞助档位，定制明亚保险专属权益方案</div>
+
+  <!-- 品牌露出 -->
+  <div class="card gold">
+    <h3><span class="emoji">🏷️</span>全程品牌露出</h3>
+    <ul>
+      <li class="at_top">ORI <strong>全程（3天）</strong>所有活动物料品牌 LOGO 展示</li>
+      <li>主背景板<strong>首位</strong>LOGO 露出位置</li>
+      <li>所有参赛手册、节目单、纪念品印有明亚 LOGO</li>
+      <li>晚宴主视觉背景板核心 LOGO 位</li>
+      <li>体育/团建活动队旗、横幅、道具等物料品牌露出</li>
+    </ul>
+  </div>
+
+  <!-- 保险权益 -->
+  <div class="card">
+    <h3><span class="emoji">🛡️</span>全程意外险 · 独家保障合作</h3>
+    <ul>
+      <li class="at_top">明亚保险作为赛事<strong>唯一指定保险合作伙伴</strong></li>
+      <li>为全部约 200 名参赛新生提供 ORI 全程意外伤害保障</li>
+      <li>主持人口播强调"本次赛事由明亚保险提供全程意外保障"（≥5 次）</li>
+      <li>活动群内推送明亚保障说明，强化品牌服务认知</li>
+      <li>赛后向全体同学发送明亚保险品牌致谢邮件/消息</li>
+    </ul>
+  </div>
+
+  <!-- 传播权益 -->
+  <div class="card">
+    <h3><span class="emoji">📣</span>媒体传播与品牌提升</h3>
+    <ul>
+      <li class="at_top">岭院官方公众号<strong>独家专访明亚</strong>推文（赞助+保障专题）</li>
+      <li>专业设计团队提供 ≤3 次海报/宣传稿件制作服务</li>
+      <li>所有活动照片/视频中出现明亚品牌（自然植入，不突兀）</li>
+      <li>晚宴现场品牌致辞环节（企业代表 3-5 分钟）</li>
+      <li>校友社群同步推送，覆盖 2000+ 岭南校友网络</li>
+    </ul>
+  </div>
+
+  <!-- 人才连接 -->
+  <div class="card">
+    <h3><span class="emoji">🤝</span>精英人才连接</h3>
+    <ul>
+      <li class="at_top">参赛选手简历（脱敏）优先推送至明亚</li>
+      <li>企业高管担任大赛<strong>总评委</strong>并颁奖致辞</li>
+      <li>"人才交流会"专场环节，与 200+ 中高层管理者面对面</li>
+      <li>商业策划大赛方案精华汇编分享（含财富管理/保险科技选题）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════════ 价值亮点 ═══════════ -->
+<div class="section">
+  <div class="section-title">💡 为什么明亚需要这次合作</div>
+  <div class="section-sub">三个不可复制的战略价值</div>
+
+  <div class="highlights">
+    <div class="hl-item">
+      <span class="num">200+</span>
+      <span class="label">中高层精英直触<br>精准保险/理财客户画像</span>
+    </div>
+    <div class="hl-item">
+      <span class="num">3 天</span>
+      <span class="label">全程沉浸式品牌曝光<br>体育×社交×竞技×晚宴</span>
+    </div>
+    <div class="hl-item">
+      <span class="num">2000+</span>
+      <span class="label">岭南校友圈触达<br>AACSB国际认证商学院背书</span>
+    </div>
+    <div class="hl-item">
+      <span class="num">唯一</span>
+      <span class="label">赛事保险合作伙伴<br>竞品排他 · 品类独占</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ 活动信息 ═══════════ -->
+<div class="section">
+  <div class="card">
+    <h3><span class="emoji">📅</span>活动基本信息</h3>
+    <table>
+      <tr><td>活动名称</td><td>中山大学岭南学院 2026 级商业策划大赛暨新生入学导向（ORI）</td></tr>
+      <tr><td>活动时间</td><td>2026 年 9 月 5 日 — 7 日（共 3 天）</td></tr>
+      <tr><td>举办地点</td><td>广州康莱德酒店（拟定）</td></tr>
+      <tr><td>参与人群</td><td>2026 级 MBA/MDE 新生约 200 人（中高层管理者为主）</td></tr>
+      <tr><td>主办单位</td><td>中山大学岭南学院</td></tr>
+      <tr><td>赛事主题</td><td>"数智引擎，无界创变"</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════ CTA ═══════════ -->
+<div class="cta">
+  <h3>期待与明亚携手，护航新生精英</h3>
+  <p>让明亚的品牌被 200+ 商业领袖记住，从他们踏入岭院的第一天起</p>
+  <div class="contact">
+    📞 邱梓涛 · 学联外联部部长 · 13288778829
+  </div>
+</div>
+
+<footer>
+  中山大学岭南学院 · 非全日制专硕学生联合会 · 外联部<br>
+  本方案为明亚保险专属定制，如有调整需求欢迎沟通
+</footer>
+
+</body>
+</html>
