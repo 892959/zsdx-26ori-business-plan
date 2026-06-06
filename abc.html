@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国农业银行广州分行 × 中山大学岭南学院2026级商业策划大赛 · 续约赞助方案</title>
+<style>
+  :root {
+    --bg: #0b0f15;
+    --card: #11161f;
+    --card2: #161c26;
+    --gold: #c9a96e;
+    --gold-light: #e0c78a;
+    --gold-dark: #a08040;
+    --green: #4da87c;
+    --green-light: #5fc892;
+    --text: #e0e0e0;
+    --text2: #a0a8b4;
+    --text3: #6a7280;
+    --border: rgba(255,255,255,0.06);
+    --radius: 16px;
+    --max-w: 800px;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+  .hero {
+    text-align: center;
+    padding: 80px 24px 60px;
+    background: linear-gradient(180deg, #0d2a1a 0%, var(--bg) 100%);
+    border-bottom: 1px solid rgba(77,168,124,0.15);
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(77,168,124,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero .badge {
+    display: inline-block;
+    background: rgba(77,168,124,0.12);
+    color: var(--green-light);
+    font-size: 13px; padding: 6px 18px;
+    border-radius: 20px; letter-spacing: 0.5px; margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-size: 32px; font-weight: 700; color: #fff;
+    line-height: 1.4; margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .hero h1 span { color: var(--gold); }
+  .hero .sub { color: var(--text2); font-size: 16px; margin-bottom: 30px; }
+  .hero .divider {
+    width: 50px; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--green), transparent);
+    margin: 0 auto 16px;
+  }
+  .section {
+    max-width: var(--max-w); margin: 0 auto; padding: 48px 24px;
+  }
+  .section-title {
+    font-size: 20px; font-weight: 700; color: var(--gold); margin-bottom: 6px; letter-spacing: 0.5px;
+  }
+  .section-sub { color: var(--text2); font-size: 14px; margin-bottom: 28px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 32px; margin-bottom: 20px;
+  }
+  .card.accent {
+    border-color: rgba(77,168,124,0.2);
+    background: linear-gradient(135deg, #151c26 0%, #0d1a18 100%);
+  }
+  .card h3 {
+    font-size: 17px; font-weight: 600; color: #fff; margin-bottom: 14px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .card h3 .emoji { font-size: 22px; }
+  .card p, .card li { color: var(--text2); font-size: 14.5px; }
+  .card ul { list-style: none; padding: 0; }
+  .card li {
+    padding: 5px 0; padding-left: 20px; position: relative; color: var(--text2);
+  }
+  .card li::before {
+    content: ''; position: absolute; left: 0; top: 12px;
+    width: 6px; height: 6px; background: var(--gold-dark); border-radius: 50%;
+  }
+  .card li.high::before { background: var(--green); width: 8px; height: 8px; top: 10px; }
+  .highlights {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  }
+  .hl-item {
+    background: var(--card2); border: 1px solid var(--border);
+    border-radius: 12px; padding: 24px 20px; text-align: center;
+  }
+  .hl-item .num { font-size: 28px; font-weight: 800; color: var(--green-light); display: block; }
+  .hl-item .label { font-size: 13px; color: var(--text2); margin-top: 4px; }
+  .pledge-box { text-align: center; padding: 42px 24px; }
+  .pledge-box .amount {
+    font-size: 42px; font-weight: 800; color: var(--gold); letter-spacing: 1px;
+  }
+  .pledge-box .desc { font-size: 15px; color: var(--text2); margin-top: 8px; }
+  .pledge-box .extra-tag {
+    display: inline-block; margin-top: 14px; padding: 8px 20px;
+    background: rgba(77,168,124,0.1); border: 1px solid rgba(77,168,124,0.2);
+    border-radius: 20px; color: var(--green-light); font-size: 14px; font-weight: 500;
+  }
+  table {
+    width: 100%; border-collapse: collapse; margin: 12px 0 0; font-size: 14px;
+  }
+  th {
+    text-align: left; color: var(--gold); font-weight: 600;
+    padding: 10px 6px 8px; border-bottom: 1px solid rgba(201,169,110,0.2); font-size: 13px;
+  }
+  td {
+    padding: 10px 6px; color: var(--text2); border-bottom: 1px solid var(--border);
+  }
+  td:first-child { color: #d0d8e0; font-weight: 500; }
+  .cta {
+    text-align: center; padding: 60px 24px 80px;
+    background: linear-gradient(0deg, rgba(77,168,124,0.06) 0%, transparent 60%);
+    border-top: 1px solid var(--border);
+  }
+  .cta h3 { font-size: 20px; color: #fff; margin-bottom: 12px; }
+  .cta p { color: var(--text2); font-size: 15px; margin-bottom: 28px; }
+  .cta .contact {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 16px; color: var(--gold);
+    border-bottom: 1px dashed var(--gold-dark); padding-bottom: 4px;
+  }
+  footer {
+    text-align: center; padding: 32px 24px; color: var(--text3); font-size: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .loan-card {
+    background: linear-gradient(135deg, #0d2a1a 0%, #111820 100%);
+    border: 1px solid rgba(77,168,124,0.2);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  .loan-card .price {
+    font-size: 36px; font-weight: 800; color: var(--green-light); text-align: center;
+  }
+  .loan-card .price-label {
+    text-align: center; color: var(--text2); font-size: 14px; margin-top: 4px;
+  }
+  .loan-card .loan-detail {
+    margin-top: 16px; font-size: 14px; color: var(--text2); line-height: 1.8; text-align: center;
+  }
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 24px; }
+    .highlights { grid-template-columns: 1fr; }
+    .section { padding: 32px 16px; }
+    .card { padding: 20px; }
+    .pledge-box .amount, .loan-card .price { font-size: 32px; }
+    .loan-card { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ HERO ═══════════ -->
+<div class="hero">
+  <div class="badge">🤝 续约合作 · 2026再携手</div>
+  <h1>中国农业银行广州分行<br>× <span>中山大学岭南学院</span></h1>
+  <p class="sub">2026级商业策划大赛暨新生入学导向活动 · 联合冠名赞助续约方案</p>
+  <div class="divider"></div>
+</div>
+
+<!-- ═══════════ 续约关系 ═══════════ -->
+<div class="section">
+  <div class="card" style="border-left: 3px solid var(--green);">
+    <h3><span class="emoji">🔗</span>合作基础 · 从 2025 到 2026</h3>
+    <p style="color:var(--text2); line-height:1.8;">
+      感谢农行广州分行在<span style="color:#fff;">2025 级新生入学导向活动</span>中的鼎力支持。
+      <br>今年，我们期待延续这份合作，共同服务新一届<strong style="color:var(--green-light);">数字经济方向非全日制专硕</strong>精英群体。
+    </p>
+  </div>
+</div>
+
+<!-- ═══════════ 核心方案 ═══════════ -->
+<div class="section">
+  <div class="card accent pledge-box">
+    <div class="amount">¥30,000</div>
+    <div class="desc">现金赞助 · 联合冠名档位</div>
+    <div class="extra-tag">🏦 叠加学费贷款战略合作</div>
+  </div>
+</div>
+
+<!-- ═══════════ 学费贷款合作 ═══════════ -->
+<div class="section">
+  <div class="section-title">🎓 学费贷款战略合作</div>
+  <div class="section-sub">农行 × 岭院数字经济非全专硕 · 精准触达高净值人群</div>
+
+  <div class="loan-card">
+    <div class="price">¥22.8 万</div>
+    <div class="price-label">数字经济非全日制专硕 · 三年学费总金额</div>
+    <div class="loan-detail">
+      2026 级数字经济方向非全专硕新生约 <strong style="color:var(--green-light);">186 人</strong>，
+      <br>学费贷款需求明确，农行可提供专属助学贷款方案，
+      <br>直达高净值、高收入、高成长的优质客户群体。
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="emoji">💡</span>学费贷款合作价值</h3>
+    <ul>
+      <li class="high"><strong>精准获客</strong>：186 名在职研究生，年收入中高水平，贷款即账户，账户即客户</li>
+      <li class="high"><strong>长期锁定</strong>：3 年学制，持续绑定优质客户，交叉销售空间大</li>
+      <li class="high"><strong>场景嵌入</strong>：在 ORI 活动中设专属摊位，面对面解答贷款政策，零距离获客</li>
+      <li>学院背书，提升贷款产品在 MBA/MDE 群体中的信任度与转化率</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════════ 摊位权益 ═══════════ -->
+<div class="section">
+  <div class="section-title">🪧 摊位宣传权益 · 面对面触达</div>
+  <div class="section-sub">在新生最集中的场景下，由农行团队直接对话潜在客户</div>
+
+  <div class="card accent">
+    <h3><span class="emoji">📍</span>ORI 活动摊位安排</h3>
+    <ul>
+      <li class="high">ORI <strong>全程 3 天</strong>黄金位置专属摊位</li>
+      <li class="high">摊位可设学费贷款咨询区 + 农行产品展示区</li>
+      <li>200+ 名新生必经动线，人流密度最高区域</li>
+      <li>农行可安排专属团队现场服务，不受限</li>
+      <li>摊位配套：桌椅、电源、农行品牌背景板</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3><span class="emoji">🎯</span>摊位最佳使用场景</h3>
+    <table>
+      <tr><td>🥂 晚宴入场时段</td><td>全体新生 + 嘉宾集中签到，摊位必经</td></tr>
+      <tr><td>🏃 体育活动前后</td><td>高能量轻松氛围，适宜短时交流</td></tr>
+      <tr><td>📊 商业策划路演日</td><td>上午+中午时段，人流高峰期</td></tr>
+      <tr><td>🍽️ 午餐会时段</td><td>自由社交时间，最适合深度洽谈</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════ 品牌权益 ═══════════ -->
+<div class="section">
+  <div class="section-title">🏷️ 联合冠名权益明细</div>
+
+  <div class="card">
+    <h3><span class="emoji">📌</span>品牌露出</h3>
+    <ul>
+      <li class="high">主背景板<strong>首要</strong>LOGO 位置（与农行品牌主色调统一）</li>
+      <li>全场物料（手册、海报、易拉宝、桌牌等）品牌 LOGO</li>
+      <li>赛事冠名："2026 中国农业银行杯商业策划大赛"</li>
+      <li>摊位专属品牌背景板 + 横幅</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3><span class="emoji">📣</span>传播与互动</h3>
+    <ul>
+      <li class="high">主持人口播鸣谢 ≥5 次（含学费贷款合作内容）</li>
+      <li>岭院官方公众号<strong>独家专访</strong>（赞助专题 + 学费贷款政策）</li>
+      <li>专业设计团队提供 ≤3 次海报/宣传稿件制作</li>
+      <li>晚宴现场 3-5 分钟品牌致辞</li>
+      <li>校友社群（2000+ 人）活动回顾推送中首位鸣谢</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3><span class="emoji">🤝</span>人才与资源对接</h3>
+    <ul>
+      <li class="high">企业高管担任大赛<strong>总评委</strong>并颁奖</li>
+      <li>参赛选手简历（脱敏）优先推送至农行</li>
+      <li>"人才交流会"面对面环节，直触 200+ 管理者</li>
+      <li>商业策划大赛方案精华汇编分享</li>
+      <li>赛后企业参访优先合作权</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════════ 价值对比 ═══════════ -->
+<div class="section">
+  <div class="section-title">📊 续约价值对比</div>
+
+  <table>
+    <tr>
+      <th></th>
+      <th style="text-align:center;">2025 合作</th>
+      <th style="text-align:center;">2026 续约（建议）</th>
+    </tr>
+    <tr>
+      <td>赞助形式</td>
+      <td style="text-align:center;">—</td>
+      <td style="text-align:center; color:var(--green-light);">现金 3w + 摊位 + 贷款合作</td>
+    </tr>
+    <tr>
+      <td>受众规模</td>
+      <td style="text-align:center;">~200 人</td>
+      <td style="text-align:center;">~200 人（增加数字经济方向）</td>
+    </tr>
+    <tr>
+      <td>学费贷款嵌入</td>
+      <td style="text-align:center;">—</td>
+      <td style="text-align:center; color:var(--green-light);">✅ 186 人精准触达</td>
+    </tr>
+    <tr>
+      <td>摊位权益</td>
+      <td style="text-align:center;">—</td>
+      <td style="text-align:center; color:var(--green-light);">✅ 全程 3 天摊位</td>
+    </tr>
+    <tr>
+      <td>冠名权</td>
+      <td style="text-align:center;">—</td>
+      <td style="text-align:center; color:var(--green-light);">✅ 联合冠名</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ═══════════ 活动信息 ═══════════ -->
+<div class="section">
+  <div class="card">
+    <h3><span class="emoji">📅</span>活动基本信息</h3>
+    <table>
+      <tr><td>活动名称</td><td>中山大学岭南学院 2026 级商业策划大赛暨新生入学导向（ORI）</td></tr>
+      <tr><td>活动时间</td><td>2026 年 9 月 5 日 — 7 日（共 3 天）</td></tr>
+      <tr><td>举办地点</td><td>广州康莱德酒店（拟定）</td></tr>
+      <tr><td>参与人群</td><td>2026 级 MBA/MDE 新生约 200 人（中高层管理者为主）</td></tr>
+      <tr><td>数字经济方向</td><td>约 186 人（学费 3 年 ¥22.8 万，贷款需求明确）</td></tr>
+      <tr><td>主办单位</td><td>中山大学岭南学院</td></tr>
+      <tr><td>赛事主题</td><td>"数智引擎，无界创变"</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════ CTA ═══════════ -->
+<div class="cta">
+  <h3>2026，让农行与岭南继续同行</h3>
+  <p>从一笔学费贷款开始，陪伴 200+ 商业精英的三年成长</p>
+  <div class="contact">
+    📞 邱梓涛 · 学联外联部部长 · 13288778829
+  </div>
+</div>
+
+<footer>
+  中山大学岭南学院 · 非全日制专硕学生联合会 · 外联部<br>
+  本方案为中国农业银行广州分行专属续约定制
+</footer>
+
+</body>
+</html>
