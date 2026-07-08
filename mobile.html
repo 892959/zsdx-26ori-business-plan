@@ -1,467 +1,465 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>中山大学岭南学院·2026级商业策划大赛 | 整体方案</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { font-size: 16px; -webkit-text-size-adjust: 100%; }
-        body {
-            background: #eef2f8;
-            font-family: 'PingFang SC', 'Segoe UI', 'Roboto', sans-serif;
-            line-height: 1.6;
-            padding: 0;
-            color: #1a2a3a;
-        }
-        .doc {
-            max-width: 750px;
-            margin: 0 auto;
-            background: #ffffff;
-            overflow: hidden;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>中山大学岭南学院2026级商业策划大赛项目细则</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#003057;--gold:#d4af37;--blue:#1a6fa8;--orange:#c8623a;
+  --bg:#f9fbfd;--card:#fff;--border:#dfe8f0;--text:#1a2a3a;--light:#5f7d9c;
+}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+  line-height:1.65;color:var(--text);font-size:15px;background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
 
-        /* ========== 页眉 ========== */
-        .header {
-            background-color: #002b4f;
-            color: white;
-            border-bottom: 4px solid #d4af37;
-            text-align: center;
-        }
-        .header-banner {
-            width: 100%;
-            display: block;
-            border-bottom: 2px solid #d4af37;
-        }
-        .header-text {
-            padding: 20px 16px 24px;
-        }
-        .header h1 {
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: -0.2px;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-        .header h2 {
-            font-size: 16px;
-            font-weight: 500;
-            opacity: 0.92;
-            margin-bottom: 8px;
-        }
-        .header h3 {
-            font-size: 14px;
-            font-weight: 400;
-            opacity: 0.88;
-            margin-bottom: 6px;
-            line-height: 1.5;
-        }
-        .header-badge {
-            background: #d4af37;
-            color: #002b4f;
-            display: inline-block;
-            padding: 5px 14px;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 12px;
-            margin-top: 12px;
-        }
+/* ===== 手机版封面 ===== */
+.m-cover{
+  min-height:100vh;position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse 75% 50% at 100% 0%,rgba(255,130,80,0.6) 0%,transparent 65%),
+    radial-gradient(ellipse 80% 55% at 0% 100%,rgba(110,195,220,0.6) 0%,transparent 65%),
+    radial-gradient(ellipse 55% 25% at 50% 0%,rgba(160,215,235,0.4) 0%,transparent 70%),
+    linear-gradient(180deg,#f4fafd 0%,#fffaf2 60%,#fff5ec 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:60px 24px 40px;text-align:center;
+}
+.m-cover-top{
+  position:absolute;top:28px;left:24px;right:24px;
+  display:flex;justify-content:space-between;align-items:flex-start;
+}
+.m-cover-top .school{font-size:12px;font-weight:700;color:var(--navy);letter-spacing:1px;}
+.m-cover-top .school-en{font-size:8px;color:#4a6a82;letter-spacing:1.5px;margin-top:2px;}
+.m-cover-top .tagline{font-size:10px;color:var(--orange);font-weight:600;text-align:right;letter-spacing:1px;}
+.m-cover-top .tagline-en{font-size:8px;color:#5f7d9c;letter-spacing:2px;margin-top:2px;}
+.m-cover-title{
+  font-family:"STKaiti","KaiTi","楷体",serif;font-size:56px;font-weight:700;
+  letter-spacing:6px;line-height:1.1;margin-bottom:8px;
+  background:linear-gradient(90deg,#1a6fa8 0%,#2a8fc4 35%,#d96a3a 65%,#c8623a 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.m-cover-title-en{font-size:11px;letter-spacing:4px;color:#4a6a82;margin-bottom:24px;}
+.m-cover-divider{display:flex;align-items:center;gap:10px;margin:16px 0;}
+.m-cover-divider::before,.m-cover-divider::after{
+  content:"";width:50px;height:1px;background:linear-gradient(90deg,transparent,#c8a050,transparent);
+}
+.m-cover-divider span{color:#c8a050;font-size:12px;}
+.m-cover-sub{font-size:18px;font-weight:600;color:var(--navy);letter-spacing:3px;margin-bottom:4px;}
+.m-cover-sub-en{font-size:10px;letter-spacing:3px;color:#6b8aa5;margin-bottom:20px;}
+.m-cover-badge{
+  display:inline-block;padding:6px 16px;border:1px solid #c8a050;border-radius:16px;
+  font-size:12px;letter-spacing:2px;color:var(--orange);font-weight:600;
+  background:rgba(255,255,255,0.5);margin-bottom:30px;
+}
+.m-cover-info{
+  width:100%;max-width:320px;display:flex;flex-direction:column;gap:8px;
+}
+.m-cover-info-row{
+  display:flex;align-items:center;gap:8px;font-size:13px;color:var(--navy);
+  background:rgba(255,255,255,0.5);padding:8px 12px;border-radius:10px;
+  border-left:2px solid #c8a050;
+}
+.m-cover-info-row .lbl{font-size:9px;color:#8a9bb0;letter-spacing:1px;min-width:50px;}
+.m-cover-info-row .val{font-weight:700;font-size:13px;}
 
-        /* ========== 内容区 ========== */
-        .content {
-            padding: 20px 16px 24px;
-        }
-        .info-box {
-            background: #f0f7fe;
-            border-left: 4px solid #0077be;
-            padding: 14px 16px;
-            margin: 0 0 20px;
-            border-radius: 12px;
-            font-size: 14px;
-            line-height: 1.65;
-        }
-        .info-box strong { color: #003057; }
+/* ===== 内容区 ===== */
+.m-content{padding:20px 16px 40px;max-width:600px;margin:0 auto;}
+.m-intro{
+  background:linear-gradient(135deg,#f5f8fc 0%,#fffaf2 100%);
+  border:0.5px solid var(--gold);border-radius:12px;padding:16px;margin-bottom:24px;font-size:13px;line-height:1.7;
+}
+.m-intro strong{color:var(--navy);}
 
-        /* ========== 标题体系 ========== */
-        .section-title {
-            font-size: 19px;
-            font-weight: 800;
-            color: #003057;
-            border-left: 5px solid #d4af37;
-            padding-left: 14px;
-            margin: 28px 0 16px;
-            line-height: 1.4;
-        }
-        .subsection-title {
-            font-size: 17px;
-            font-weight: 700;
-            color: #1e4663;
-            margin: 24px 0 12px;
-            border-bottom: 2px solid #e5eef5;
-            padding-bottom: 6px;
-        }
-        .subsub-title {
-            font-size: 15px;
-            font-weight: 700;
-            color: #004b7c;
-            margin: 16px 0 8px;
-        }
+h1.m-section{
+  font-size:19px;font-weight:800;color:var(--navy);
+  border-left:4px solid var(--gold);padding:6px 0 6px 12px;margin:24px 0 12px;
+}
+h2.m-sub{
+  font-size:15px;font-weight:700;color:#1e4663;margin:18px 0 8px;
+  padding-bottom:4px;border-bottom:1px solid var(--gold);
+}
+h3.m-sub3{font-size:14px;font-weight:700;color:#004b7c;margin:12px 0 6px;}
 
-        /* ========== 段落与列表 ========== */
-        p {
-            margin-bottom: 0.85rem;
-            text-align: justify;
-            line-height: 1.65;
-            font-size: 14px;
-        }
-        ul, ol { margin: 0.5rem 0 0.85rem 1.4rem; font-size: 14px; }
-        li { margin: 0.3rem 0; line-height: 1.6; }
+p{margin-bottom:8px;text-align:justify;font-size:14px;line-height:1.7;}
+strong{color:var(--navy);}
+ul,ol{margin:6px 0 10px 20px;}
+li{margin:4px 0;font-size:13px;line-height:1.6;}
 
-        /* ========== 赞助商卡片（竖向堆叠）========== */
-        .sponsor-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin: 16px 0;
-        }
-        .sponsor-card {
-            background: #f9fbfe;
-            border-radius: 14px;
-            padding: 14px 16px;
-            border: 1px solid #dfe8f0;
-            font-size: 13px;
-            line-height: 1.6;
-        }
-        .sponsor-card strong {
-            font-size: 14px;
-            color: #003057;
-            display: block;
-            margin-bottom: 4px;
-        }
+/* 表格容器 — 横向滚动 */
+.table-wrap{overflow-x:auto;margin:10px 0 14px;-webkit-overflow-scrolling:touch;border-radius:8px;}
+table{
+  width:100%;min-width:320px;border-collapse:collapse;font-size:12px;
+  background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.06);
+}
+th{
+  background:var(--navy);color:#fff;font-weight:700;font-size:12px;
+  padding:8px 10px;text-align:center;white-space:nowrap;
+}
+td{border:0.5px solid #dfe8f0;padding:7px 10px;vertical-align:middle;font-size:12px;line-height:1.5;}
+tr:nth-child(even) td{background:#f5f8fc;}
 
-        /* ========== 卡片（赛道等）========== */
-        .card-grid, .flex-rows {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            margin: 16px 0;
-        }
-        .card {
-            background: #ffffff;
-            border: 1px solid #e2ecf5;
-            border-radius: 16px;
-            padding: 16px;
-        }
-        .card h4 {
-            font-size: 15px;
-            color: #003057;
-            border-left: 4px solid #d4af37;
-            padding-left: 10px;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            line-height: 1.45;
-        }
-        .card p { font-size: 13px; margin-bottom: 0; }
+/* 高亮框 */
+.m-callout{
+  background:#f0f7fe;border-left:3px solid #0077be;
+  padding:12px 14px;margin:10px 0;border-radius:8px;font-size:13px;line-height:1.6;
+}
+.m-callout-gold{background:linear-gradient(135deg,#fff9e8,#fff5d6);border-left-color:var(--gold);}
+.m-callout-cfa{background:linear-gradient(135deg,#e8f0fb,#f0f7fe);border-left-color:#1a5fa8;}
+.m-callout strong{color:var(--navy);}
+.m-callout ul, .m-callout ol{margin:6px 0 0 18px;}
+.m-callout li{font-size:12px;}
 
-        /* ========== 表格（横向滚动）========== */
-        .table-scroll {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            margin: 16px 0;
-            border-radius: 10px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13px;
-            min-width: 340px;
-        }
-        th, td {
-            border: 1px solid #d9e1ec;
-            padding: 10px 12px;
-            vertical-align: top;
-            line-height: 1.55;
-        }
-        th {
-            background: #eef3fc;
-            font-weight: 700;
-            color: #00263b;
-            font-size: 13px;
-        }
-        td { font-size: 12px; }
+/* 赛道卡 */
+.m-track{
+  background:#fafcff;border:0.5px solid var(--border);border-radius:10px;
+  padding:14px;margin:10px 0;
+}
+.m-track-a{border-left:3px solid #1a5fa8;}
+.m-track-b{border-left:3px solid var(--gold);}
+.m-track-tag{
+  display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;
+  font-weight:700;margin-bottom:8px;
+}
+.m-tag-a{background:#e0eaf8;color:#1a3a6e;}
+.m-tag-b{background:#fff3cd;color:#7a5900;}
 
-        /* ========== 图库（单列瀑布流）========== */
-        .gallery-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 14px;
-            margin: 16px 0;
-        }
-        .gallery-item {
-            background: #fefefe;
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-            border: 1px solid #e9edf2;
-        }
-        .gallery-img {
-            width: 100%;
-            aspect-ratio: 4 / 3;
-            object-fit: cover;
-            display: block;
-            background: #eef2f5;
-        }
-        .gallery-caption {
-            padding: 10px 14px 12px;
-            font-size: 13px;
-            color: #2c4c6e;
-            font-weight: 500;
-            text-align: center;
-            border-top: 1px solid #eff3f8;
-        }
+/* Day3 表格特殊样式 */
+.day-highlight{background:#fff3cd !important;font-weight:700;}
+.day-final{background:#e8f0fb !important;font-weight:700;}
 
-        /* ========== 其他元素 ========== */
-        .badge {
-            background: #eef2fa;
-            color: #003468;
-            border-radius: 30px;
-            font-size: 11px;
-            font-weight: 600;
-            padding: 3px 10px;
-            display: inline-block;
-            margin: 4px 0 8px;
-        }
-        .highlight {
-            background: #fef8e7;
-            border-left: 3px solid #f5b042;
-            padding: 10px 14px;
-            border-radius: 10px;
-            margin: 12px 0;
-            font-size: 13px;
-        }
-        .note-text {
-            background: #f9fafc;
-            padding: 6px 14px;
-            border-radius: 32px;
-            display: inline-block;
-            font-size: 12px;
-            color: #5f7d9c;
-            margin-bottom: 14px;
-        }
-        .theme-line {
-            clear: both;
-            margin-bottom: 10px;
-        }
-        .gold { background: #fff9e8; border-left: 4px solid #d4af37; }
+/* 页脚 */
+.m-footer{
+  margin-top:30px;padding:20px 0;border-top:0.5px solid var(--gold);
+  text-align:center;font-size:12px;color:#5f7d9c;line-height:1.7;
+}
+.m-footer strong{color:var(--navy);}
 
-        .footer {
-            text-align: center;
-            font-size: 12px;
-            color: #5f7d9c;
-            border-top: 1px solid #e2ecf5;
-            padding-top: 20px;
-            margin-top: 28px;
-        }
+/* 返回顶部 */
+.m-back-top{
+  position:fixed;bottom:20px;right:16px;width:40px;height:40px;
+  background:var(--navy);color:#fff;border-radius:50%;border:none;
+  font-size:18px;cursor:pointer;z-index:100;opacity:0;transition:opacity 0.3s;
+  display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,48,87,0.3);
+}
+.m-back-top.show{opacity:1;}
 
-        /* ========== 宽表格特殊处理：赞助等级表 ========== */
-        .wide-table {
-            min-width: 580px;
-        }
-
-        /* ========== 打印样式 ========== */
-        @media print {
-            .header, .header * { font-weight: 400 !important; }
-            .header h1 { font-weight: 700 !important; }
-        }
-    </style>
+@media(max-width:380px){
+  .m-cover-title{font-size:46px;letter-spacing:4px;}
+  .m-cover-sub{font-size:16px;}
+  p{font-size:13px;}
+  li{font-size:12px;}
+}
+</style>
 </head>
 <body>
-<div class="doc">
+
+<!-- ===== 封面 ===== -->
+<div class="m-cover">
+  <div class="m-cover-top">
     <div>
-        <img class="header-banner" src="https://s41.ax1x.com/2026/05/25/pmChCyF.png" alt="中山大学岭南学院商业策划大赛">
-        <div>
-            <h1></h1>
-            <h2></h2>
-            <h3></h3>
-            <h3></h3>
-            <h3></h3>
-            <div></div>
-        </div>
+      <div class="school">中山大学岭南学院</div>
+      <div class="school-en">LINGNAN COLLEGE · SYSU</div>
     </div>
-    <div class="content">
-        <div class="info-box">📌 <strong>致合作伙伴</strong>：中山大学岭南学院的新生商业策划大赛是华南地区最具影响力的MBA/MDE新生商业实战赛事。2026级赛事深度聚焦数字经济与AI应用、投资与财富管理，覆盖金融、科技、文旅、能源等领域。我们为企业提供<strong>高端人才精准触达、品牌权威背书、可落地商业方案与全媒体传播</strong>四大核心价值，诚邀各行业商协会、优秀领军企业共创新生态。</div>
-    
-        <!-- 一、赞助核心价值 -->
-        <div class="section-title">一、赞助商核心价值</div>
-        <div class="sponsor-grid">
-            <div class="sponsor-card"><strong>🎯 精准触达高端精英</strong>约200多名中大校友（含180名数字经济硕士新生），工作经验10年左右，多为金融、科技、制造等领域的中高层管理者，是未来商业领袖与高净值客群。</div>
-            <div class="sponsor-card"><strong>🏛️ 顶级商学院背书</strong>岭南学院拥有AACSB国际认证，企业社会责任形象与学术声望双重提升。</div>
-            <div class="sponsor-card"><strong>📈 可落地商业方案</strong>围绕赞助机构的需求及痛点，量身定做符合项目目标的商业策划方案，优秀案例可作为标杆展开宣传或落地实施。</div>
-            <div class="sponsor-card"><strong>📢 全媒体曝光矩阵</strong>官方公众号、视频号、校友社群、小红书、财经媒体等联合报道，覆盖大湾区数十万商界人群。如企业同意，可进行全网答辩直播，增加品牌露出次数及影响力。</div>
-        </div>
-
-        <!-- 二、赞助等级与权益体系 -->
-        <div class="section-title">二、赞助等级与权益体系</div>
-        <p>大赛设立三大赞助层级，支持<strong>现金赞助、资源置换（场地/餐饮/物料/技术）或"现金+资源"组合</strong>。所有合作方可灵活定制权益包，具体权益如下：</p>
-        <div class="table-scroll">
-            <table class="wide-table">
-                <thead>
-                    <tr><th style="width:20%">等级</th><th style="width:22%">金额/资源门槛</th><th style="width:12%">数量</th><th style="width:46%">核心权益（包含但不限于）</th></tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>🏆 联合冠名赞助</strong></td>
-                        <td>现金3万元+其他权益（主要为奖品）<br>或等值资源+现金1.5万+</td>
-                        <td>独家1席</td>
-                        <td>
-                            • 赛事总冠名权："2026××杯商业策划大赛"<br>
-                            • 主背景板首位LOGO、主持人口播≥5次、全场物料品牌露出<br>
-                            • 命题权：可指定赛道（A/B）定制赛题，企业高管担任总评委并颁奖致辞<br>
-                            • 赛后独家专访推送至校友社群，选手简历优先推送（脱敏）<br>
-                            • 获得所有优胜方案摘要报告，优先落地合作机会<br>
-                            增值权益1：提供全流程海报素材制作、宣传稿件撰写服务，由专业财经媒体团队参与全程服务，不超过3次<br>
-                            增值权益2：可以获得新生入学导向活动3天的全程LOGO展示（如企业有需求，可全程安排摊位宣传、小册子宣传）
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>🤝 联合承办合作</strong></td>
-                        <td>现金1.5万元+<br>或场地/餐饮/物料资源置换（价值≥2万）</td>
-                        <td>≤3家</td>
-                        <td>
-                            • 赛事联合logo展示（背景板、手册、开场PPT）<br>
-                            • 分赛道命题权（可嵌入企业真实业务案例），指派1名分赛道评委<br>
-                            • 企业高管出席决赛及颁奖礼，参与"人才交流会"环节<br>
-                            • 官方公众号单独鸣谢推文，赛后企业参访优先合作<br>
-                            增值权益1：提供海报素材制作、宣传稿件撰写服务，由专业财经媒体团队参与全程服务，不超过2次<br>
-                            增值权益2：可以获得新生入学导向活动1天的全程LOGO展示（如企业有需求，可安排1天的摊位宣传、小册子宣传）
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>🎁 友好合作伙伴</strong></td>
-                        <td>现金5,000-8,000元<br>或实物奖品/伴手礼/茶歇等价值≥5千</td>
-                        <td>若干</td>
-                        <td>
-                            • 品牌墙/伴手礼LOGO展示、选手参赛手册鸣谢页<br>
-                            • 学院官方公众号致谢推文提及、校友社群互动感谢<br>
-                            • 获得参赛选手名册（脱敏）及部分方案精华汇编<br>
-                            • 所有赞助商均享媒体报道提及、官方致谢函及长期校友网络互动
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="section-title">三、2026年商业策划大赛整体方案</div>
-        <div class="subsection-title">1、项目定位与核心目标</div>
-        <p>商业策划大赛是岭南学院数字经济硕士新生入学导向活动（ORI）中最具实战性的传承项目，也是影响团队总分数最为关键的场次（占整体分数20%及以上），是筹备时间最长、接触频次最高的团队集体活动，历年来是赞助商争抢赞助的环节。2026级大赛拟探索创新式的"联合赞助+定制赛道"模式，通过1-2月前期沟通，充分了解赞助机构的需求及关键目标，要求参赛队伍围绕机构真实需求及痛点，提供创意性强、可行性强、落地性高的商业方案。</p>
-        <p><strong>参赛对象</strong>：2026级数字经济硕士（MDE）非全日制新生，预计180人，分10组（如赞助机构有要求，可增设本科队、校友队等多元化团队，建议分赛道评选）<br><strong>决赛时间</strong>：ORI第三天上午（拟"半天路演+答辩"）<br><strong>举办地点</strong>：广州康莱德酒店（拟定）</p>
-
-        <div class="subsection-title">2、定制化赛道命题设计</div>
-        <div class="theme-line">
-            <p><strong>大赛主题</strong>："数智引擎，无界创变——2026商创未来榜（拟）"</p>
-        </div>
-        <div class="flex-rows">
-            <div class="card"><h4>📈 赛道A：数智突围·品牌增长与AI营销应用</h4><p><strong>示例命题：</strong>康莱德高端客群精准营销；明亚保险数字化客户增长；东亚/中行零售数字化营销；奇妙之旅文旅IP跨界整合。</p></div>
-            <div class="card"><h4>⚡ 赛道B：数字经济与金融创新开放赛道</h4><p><strong>命题方向：</strong>绿色金融产品设计；保险科技在能源风险管理中的应用；碳普惠与清洁能源资产数字化；量化投资；AI时代投资组合构建等。</p></div>
-        </div>
-
-        <div class="subsection-title">3、赛程安排（本方案仅聚焦商业策划部分）</div>
-        <div class="table-scroll">
-            <table>
-                <thead><tr><th>时间节点</th><th>商业策划相关事项</th></tr></thead>
-                <tbody>
-                    <tr><td>8月1日-9月5日</td><td>新生分组、领取赛题、企业宣讲、方案撰写、预审反馈</td></tr>
-                    <tr><td>9月7日（ORI第三天上午）</td><td><strong>决赛路演+答辩</strong>：每组10分钟演示+5分钟问答</td></tr>
-                    <tr><td>9月7日中午</td><td>商业策划大赛的午餐会暨颁奖典礼</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="subsection-title">4、奖项设置与奖品</div>
-        <div class="table-scroll">
-            <table>
-                <thead><tr><th>奖项</th><th>名额</th><th>奖品</th></tr></thead>
-                <tbody>
-                    <tr><td>冠军</td><td>1队</td><td>ORI团队分数+10分&amp;冠军奖杯&amp;奖品</td></tr>
-                    <tr><td>亚军</td><td>1队</td><td>ORI团队分数+8分&amp;亚军奖杯&amp;奖品</td></tr>
-                    <tr><td>季军</td><td>1队</td><td>ORI团队分数+6分&amp;季军奖杯&amp;奖品</td></tr>
-                    <tr><td>最牛技术奖</td><td>1队</td><td>ORI团队分数+3分&amp;奖品</td></tr>
-                    <tr><td>最具创意奖</td><td>1队</td><td>ORI团队分数+3分&amp;奖品</td></tr>
-                    <tr><td>卓越演示奖</td><td>1队</td><td>ORI团队分数+3分&amp;奖品</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <p>💡 可根据赞助商意愿增设企业冠名单项奖。</p>
-
-        <div class="subsection-title">5、评分细则（总分100分+加分）</div>
-        <div class="table-scroll">
-            <table>
-                <thead><tr><th>维度</th><th>分值</th><th>评委构成</th></tr></thead>
-                <tbody>
-                    <tr><td>专业性</td><td>30分</td><td>学院教授、CFA协会代表及专家</td></tr>
-                    <tr><td>完整性</td><td>20分</td><td>学院教授</td></tr>
-                    <tr><td>可行性</td><td>20分</td><td>企业高管（赞助商）</td></tr>
-                    <tr><td>创新性</td><td>15分</td><td>行业专家</td></tr>
-                    <tr><td>报告撰写质量</td><td>8分</td><td>学术组</td></tr>
-                    <tr><td>展示效果</td><td>7分</td><td>全体评委</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <p><strong>加分项</strong>：采用赞助商真实数据并提供落地协作方案，由相应赞助商评委给予 +3分。</p>
-
-        <div class="subsection-title">6、预算明细（现金需求约3-5万元）</div>
-        <div class="table-scroll">
-            <table>
-                <thead><tr><th>项目</th><th>预算（元）</th><th>备注</th></tr></thead>
-                <tbody>
-                    <tr><td>场地及设备</td><td>30,000</td><td>可赞助减免</td></tr>
-                    <tr><td>现场布置</td><td>5,000</td><td>可物料赞助</td></tr>
-                    <tr><td>餐饮接待</td><td>4,000</td><td>60人标准</td></tr>
-                    <tr><td>宣传物料</td><td>3,000</td><td>联合露出</td></tr>
-                    <tr><td>后勤应急</td><td>3,000</td><td>明亚保险可覆盖</td></tr>
-                    <tr><td>比赛奖品</td><td>3,000</td><td>可物料赞助、会员卡、优惠券等作为奖品</td></tr>
-                    <tr><td>机动预备</td><td>2,000</td><td>—</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <p><strong>总计约50,000元</strong>，通过赞助资源置换后可降至1-2万元现金支出。</p>
-
-        <div class="subsection-title">7、往届现场精彩瞬间</div>
-        <p style="margin-bottom: 8px;">2025年岭南学院商业策划大赛盛况回顾——精英对决、专业评审、颁奖荣耀。以下为现场实拍，展现赛事影响力与专业氛围。</p>
-        <div class="gallery-container">
-            <div class="gallery-item">
-                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpjF9H.jpg" alt="路演现场" loading="lazy">
-                <div class="gallery-caption">📋 决赛路演 · 团队展示方案</div>
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpj52d.jpg" alt="评委点评" loading="lazy">
-                <div class="gallery-caption">🎤 企业高管评委深度互动</div>
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpjqVf.jpg" alt="颁奖典礼" loading="lazy">
-                <div class="gallery-caption">🏆 冠军队伍荣耀时刻</div>
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpjIxA.jpg" alt="赛场氛围" loading="lazy">
-                <div class="gallery-caption">🤝 赛后深度交流 · 企业-人才对接</div>
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpjTKI.jpg" alt="赞助商品牌墙" loading="lazy">
-                <div class="gallery-caption">📢 赞助&合作伙伴展示</div>
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="https://s41.ax1x.com/2026/05/23/pmpj7rt.png" alt="团队共创" loading="lazy">
-                <div class="gallery-caption">💡 深夜备战 · 跨行业思维碰撞</div>
-            </div>
-        </div>
-
-        <div class="subsection-title">8、其他ORI环节简要说明</div>
-        <p>除商业策划大赛外，ORI还包含校园认知、公益短视频、团队破冰等环节，由其他同学负责执行。</p>
-        <div class="footer">中山大学岭南学院 · 数字经济硕士项目 | 外联部 | 赛事执行方案 V2.3</div>
+    <div>
+      <div class="tagline">岭启韶光</div>
+      <div class="tagline-en">LIGHT UP YOUR JOURNEY</div>
     </div>
+  </div>
+
+  <div class="m-cover-title">岭启韶光</div>
+  <div class="m-cover-title-en">LINGQI · SHIGUANG</div>
+
+  <div class="m-cover-divider"><span>· · ·</span></div>
+
+  <div class="m-cover-sub">2026级商业策划大赛</div>
+  <div class="m-cover-sub-en">LINGNAN BUSINESS CASE COMPETITION 2026</div>
+
+  <div class="m-cover-badge">"数智引擎，绿色向新" · 国元证券·CFA联合冠名</div>
+
+  <div class="m-cover-info">
+    <div class="m-cover-info-row">
+      <span class="lbl">时间</span><span class="val">2026.09.06（Day3）全天</span>
+    </div>
+    <div class="m-cover-info-row">
+      <span class="lbl">地点</span><span class="val">广州丽思卡尔顿酒店</span>
+    </div>
+    <div class="m-cover-info-row">
+      <span class="lbl">冠名</span><span class="val">国元证券·CFA 联合冠名</span>
+    </div>
+  </div>
 </div>
+
+<!-- ===== 内容 ===== -->
+<div class="m-content">
+
+<div class="m-intro">
+<strong>关于本细则：</strong>本方案为2026年商业策划大赛<strong>执行版项目细则</strong>，嵌套在岭院原有ORI成熟运作机制中。<strong>国元证券</strong>与<strong>CFA深圳协会</strong>作为<strong>联合冠名方</strong>，国元证券提供核心现金赞助，CFA深圳协会输出命题方向、评分原则、品牌宣讲及奖品；<strong>高顿教育</strong>同步达成官方合作，提供CFA奖学金与教育激励；<strong>越声理财</strong>提供VIP会员权益作为赛事奖品。
+</div>
+
+<!-- 一 -->
+<h1 class="m-section">一、项目概述</h1>
+<p>商业策划大赛作为岭院ORI的<strong>传承项目</strong>，致力于为新生与跨届别学员提供商业实战演练平台。2026年赛事紧扣"数智引擎，绿色向新"主题，聚焦<strong>数字经济/AI应用</strong>与<strong>ESG/可持续发展</strong>两大方向。</p>
+<p>本届大赛由<strong>国元证券·CFA联合冠名</strong>，高顿教育同步达成官方合作，越声理财提供VIP会员奖品。首次采用"<strong>上下午双赛道、全天赛事</strong>"机制，上午聚焦MDE新生赛道（ESG方向），下午开放跨届别赛道（AI方向）。</p>
+
+<div class="m-callout">
+<strong>赛事基本信息</strong>
+<ul>
+<li><strong>时间：</strong>2026年9月6日 全天 8:00-18:30</li>
+<li><strong>地点：</strong>广州丽思卡尔顿酒店</li>
+<li><strong>指导单位：</strong>中山大学岭南学院专硕教育中心</li>
+<li><strong>组织单位：</strong>2026 ORI组委会 · 商策项目组</li>
+<li><strong>联合冠名方：</strong>国元证券 · CFA深圳协会</li>
+<li><strong>官方合作：</strong>高顿教育（CFA奖学金+教育激励）</li>
+<li><strong>奖品赞助：</strong>越声理财（VIP会员权益）</li>
+<li><strong>预计参赛人数：</strong>约200人</li>
+</ul>
+</div>
+
+<!-- 二 -->
+<h1 class="m-section">二、赛道设计（双赛道 · 覆盖广）</h1>
+
+<div class="m-track m-track-a">
+  <span class="m-track-tag m-tag-a">赛道A · 上午MDE场</span>
+  <h3 class="m-sub3" style="color:#1a3a6e">主题：可持续金融与ESG创新</h3>
+  <p><strong>参赛对象：</strong>2026级MDE全体新生（约180人，10-12组）</p>
+  <p><strong>命题方向：</strong></p>
+  <ul>
+    <li>绿色金融产品设计：碳中和债券、ESG基金、转型金融工具</li>
+    <li>保险科技在能源风险管理中的应用</li>
+    <li>碳普惠与清洁能源资产数字化</li>
+    <li>ESG评级与上市公司价值——基于AI的ESG因子挖掘</li>
+    <li>企业ESG表现与融资成本实证研究</li>
+  </ul>
+  <p><strong>案例参照：</strong>结合真实能源/制造业上市公司，输出ESG驱动业务增长方案。</p>
+</div>
+
+<div class="m-track m-track-b">
+  <span class="m-track-tag m-tag-b">赛道B · 下午跨届别场</span>
+  <h3 class="m-sub3" style="color:#7a5900">主题：AI赋能与数字经济商业模式创新</h3>
+  <p><strong>参赛对象：</strong>中大本科生 + 其他届别MDE/EMBA/校友（20-40人，4-6组）</p>
+  <p><strong>命题方向：</strong></p>
+  <ul>
+    <li>AI Agent在金融场景的应用——投顾、风控、合规</li>
+    <li>大模型驱动的财富管理个性化方案</li>
+    <li>数字经济时代的新型消费商业模式</li>
+    <li>AI+营销：精准客户触达、转化漏斗优化</li>
+    <li>量化投资与AI资产配置策略</li>
+  </ul>
+  <p><strong>组队规则：</strong>跨院、跨届别自由组队，每队3-5人。</p>
+</div>
+
+<div class="m-callout m-callout-cfa">
+<strong>双赛道优势：</strong>
+<ol>
+<li>覆盖MDE新生+本科生/校友，最大化覆盖面</li>
+<li>主题差异化（上午ESG+下午AI），体现"数智+绿色"双轮驱动</li>
+<li>上下午独立评审，避免公平性问题</li>
+<li>下午场可开放对外，强化岭院品牌外溢</li>
+</ol>
+</div>
+
+<!-- 三 -->
+<h1 class="m-section">三、赛程时间表</h1>
+<h2 class="m-sub">3.1 关键时间节点</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>日期</th><th>时间</th><th>任务</th></tr></thead>
+<tbody>
+<tr><td>8月29日</td><td>20:00</td><td>商策组组建，各ORI小组推选组长</td></tr>
+<tr><td>8月31日</td><td>19:00</td><td>规则答疑，组委会线上统一答疑</td></tr>
+<tr><td>9月2日</td><td>22:00</td><td>中期材料提交：队名、合照、题目、大纲</td></tr>
+<tr><td>9月5日</td><td>20:00</td><td>赛道B组队截止</td></tr>
+<tr><td>9月6日</td><td>20:00</td><td>最终材料提交（PDF+PPT），逾期扣分</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 class="m-sub">3.2 Day3当天流程</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>时段</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td><strong>08:00-08:10</strong></td><td>开场 · 嘉宾介绍 · 联合冠名方致辞</td></tr>
+<tr><td><strong>08:10-12:00</strong></td><td>赛道A展示+问答（10-12组）</td></tr>
+<tr><td><strong>12:00-12:15</strong></td><td>评委点评 · 赛道A统分</td></tr>
+<tr><td><strong>12:15-13:30</strong></td><td>午餐 + 赛道B备场</td></tr>
+<tr class="day-highlight"><td><strong>13:30-13:45</strong></td><td>⭐ CFA协会品牌宣讲（15min）</td></tr>
+<tr><td><strong>13:45-17:00</strong></td><td>赛道B展示+问答（4-6组）</td></tr>
+<tr><td><strong>17:00-17:15</strong></td><td>评委点评 · 赛道B统分</td></tr>
+<tr class="day-final"><td><strong>17:15-18:00</strong></td><td>🎉 颁奖典礼 · 合影</td></tr>
+<tr><td><strong>18:00-18:30</strong></td><td>茶歇 · 自由交流</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- 四 -->
+<h1 class="m-section">四、评分细则</h1>
+<p>理论最高分<strong>100分</strong>，双赛道<strong>独立评分、独立排名</strong>。</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>模块</th><th>评分要点</th><th>权重</th><th>主导方</th></tr></thead>
+<tbody>
+<tr><td><strong>完整性</strong></td><td>内容全面性、效益链条完整</td><td>15分</td><td>岭院评委</td></tr>
+<tr><td rowspan="5"><strong>专业性</strong></td><td>市场分析</td><td>5分</td><td rowspan="5">CFA评委主导</td></tr>
+<tr><td>产品分析</td><td>5分</td></tr>
+<tr><td>目标客户定位</td><td>10分</td></tr>
+<tr><td>传播和推广</td><td>10分</td></tr>
+<tr><td>数字技术应用</td><td>15分</td></tr>
+<tr><td><strong>创新性</strong></td><td>方案新颖性</td><td>10分</td><td>岭院评委</td></tr>
+<tr><td><strong>问答表现</strong></td><td>逻辑清晰度</td><td>10分</td><td>联合</td></tr>
+<tr><td><strong>展示效果</strong></td><td>PPT与演讲感染力</td><td>15分</td><td>岭院评委</td></tr>
+<tr><td colspan="2" style="text-align:center"><strong>总分</strong></td><td><strong>100</strong></td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="m-callout m-callout-cfa">
+<strong>CFA评分原则（占总分40%）：</strong>
+<ul>
+<li>金融逻辑严谨性</li>
+<li>行业相关性与深度洞察</li>
+<li>研究规范性</li>
+<li>社会价值与落地性</li>
+<li>创新但不失严谨</li>
+</ul>
+</div>
+
+<h2 class="m-sub">4.1 加分项与扣分项</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>类型</th><th>项目</th><th>分值</th></tr></thead>
+<tbody>
+<tr><td rowspan="3"><strong>加分</strong></td><td>技术创新奖</td><td>+10</td></tr>
+<tr><td>最具创意奖</td><td>+10</td></tr>
+<tr><td>卓越演示奖</td><td>+10</td></tr>
+<tr><td rowspan="3"><strong>扣分</strong></td><td>展示超时30秒内</td><td>-5</td></tr>
+<tr><td>展示超时30秒以上</td><td>-5</td></tr>
+<tr><td>未按要求提交/迟到</td><td>-10</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>同分处理：</strong>按"专业性"得分高者获胜；如仍一致，由"完整性+展示效果"得分高者获胜。</p>
+
+<!-- 五 -->
+<h1 class="m-section">五、奖项设置与奖品</h1>
+<h2 class="m-sub">5.1 赛道A（MDE新生）</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>奖项</th><th>名额</th><th>奖品</th></tr></thead>
+<tbody>
+<tr><td><strong>冠军</strong></td><td>1组</td><td>CFA考试费减免+Wind年卡+高顿半价券+越声VIP+证书</td></tr>
+<tr><td><strong>亚军</strong></td><td>1组</td><td>高顿CFA奖学金+精品课程券+越声VIP+证书</td></tr>
+<tr><td><strong>季军</strong></td><td>1组</td><td>高顿教材+知识图谱+越声VIP+证书</td></tr>
+<tr><td><strong>单项奖</strong></td><td>各1组</td><td>高顿课程券+CFA周边+证书</td></tr>
+<tr><td><strong>参与奖</strong></td><td>若干</td><td>CFA奖学金抽签名额</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 class="m-sub">5.2 赛道B（跨届别）</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>奖项</th><th>名额</th><th>奖品</th></tr></thead>
+<tbody>
+<tr><td><strong>冠军</strong></td><td>1组</td><td>CFA考试费减免+Wind年卡+越声VIP+证书</td></tr>
+<tr><td><strong>亚军</strong></td><td>1组</td><td>高顿CFA奖学金+越声VIP+证书</td></tr>
+<tr><td><strong>季军</strong></td><td>1组</td><td>CFA教材套装+越声VIP+证书</td></tr>
+<tr><td><strong>单项奖</strong></td><td>各1组</td><td>CFA周边+证书</td></tr>
+<tr><td><strong>特别奖</strong></td><td>1组</td><td>最佳协作奖</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="m-callout m-callout-gold">
+<strong>奖品来源：</strong>国元证券承担赛事执行费用；CFA承担考试费减免+Wind年卡+周边；高顿承担奖学金+教材+课程券；越声理财承担VIP权益。四方互补不重叠。
+</div>
+
+<!-- 六 -->
+<h1 class="m-section">六、参赛要求与提交规范</h1>
+<h2 class="m-sub">6.1 分组与组队</h2>
+<ol>
+<li><strong>赛道A：</strong>各ORI小组推选1名商策项目组长，组数与ORI小组数一致（10-12组）。</li>
+<li><strong>赛道B：</strong>面向中大全日制本科生+其他届别MDE/EMBA+校友开放，每队3-5人，9月5日组队截止。</li>
+</ol>
+
+<h2 class="m-sub">6.2 提交物</h2>
+<ol>
+<li><strong>PDF分析报告</strong>：不少于1,500字，规范格式，内容含综述、市场调研、可行性分析等</li>
+<li><strong>PPT答辩材料</strong>：使用岭院ORI指定模板</li>
+</ol>
+<p><strong>提交时间：</strong>9月6日 20:00前，逾期扣分。</p>
+
+<h2 class="m-sub">6.3 现场展示规范</h2>
+<ul>
+<li>每组上场≤3人，商务正装</li>
+<li>展示语言为中文</li>
+<li>展示8-10分钟，问答≤2分钟</li>
+</ul>
+
+<h2 class="m-sub">6.4 原创性与合规</h2>
+<ul>
+<li>方案必须<strong>原创</strong>，引用需注明</li>
+<li>不得涉及违法/政治/宗教/性别/种族敏感内容</li>
+<li>造假/剽窃<strong>立即取消资格</strong></li>
+</ul>
+
+<!-- 七 -->
+<h1 class="m-section">七、评委结构</h1>
+<div class="table-wrap">
+<table>
+<thead><tr><th>评委</th><th>来源</th><th>数量</th></tr></thead>
+<tbody>
+<tr><td><strong>CFA评委</strong></td><td>CFA深圳协会持证人</td><td>2-3人</td></tr>
+<tr><td><strong>国元证券</strong></td><td>投行/研究部专家</td><td>1-2人</td></tr>
+<tr><td><strong>岭院学术</strong></td><td>岭院教授/副教授</td><td>2人</td></tr>
+<tr><td><strong>高顿业界</strong></td><td>高顿教育研究院</td><td>1-2人</td></tr>
+<tr><td><strong>学生评委</strong></td><td>高年级MDE/MBA</td><td>1-2人</td></tr>
+</tbody>
+</table>
+</div>
+<p>评委打分去掉最高最低后取平均。跨组质询环节营造<strong>高对抗、良性竞争氛围</strong>。</p>
+
+<!-- 八 -->
+<h1 class="m-section">八、品牌传播与露出</h1>
+<div class="table-wrap">
+<table>
+<thead><tr><th>阶段</th><th>露出内容</th></tr></thead>
+<tbody>
+<tr><td><strong>赛前</strong></td><td>赛事官方名称联合冠名、公众号推文、ORI官方群通知</td></tr>
+<tr><td><strong>赛中</strong></td><td>主背景板Logo、签到墙、评委席、CFA/国元宣讲、书籍售卖摊位</td></tr>
+<tr><td><strong>赛后</strong></td><td>获奖作品公众号专题、奖学金授予仪式、媒体新闻稿</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- 九 -->
+<h1 class="m-section">九、组委会联系方式</h1>
+<div class="m-callout">
+<strong>招商洽谈 / 细则咨询：</strong>
+<ul>
+<li>学联外联部部长 <strong>邱梓涛</strong>：13288778829（微信同号）</li>
+<li>学联外联部 / 2026 ORI组委会</li>
+<li>指导老师：中山大学岭南学院专硕教育中心</li>
+</ul>
+</div>
+
+<div class="m-footer">
+<strong>中山大学岭南学院2026级ORI商策项目组</strong><br>
+项目细则 · 2026年7月<br>
+本细则最终解释权归ORI组委会所有
+</div>
+
+</div>
+
+<button class="m-back-top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+window.addEventListener('scroll',function(){
+  var btn=document.querySelector('.m-back-top');
+  if(window.scrollY>400)btn.classList.add('show');else btn.classList.remove('show');
+});
+</script>
 </body>
 </html>
