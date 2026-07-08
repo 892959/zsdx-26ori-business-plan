@@ -1,157 +1,135 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>中山大学岭南学院·2026级商业策划大赛 | 招商方案</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'PingFang SC', 'Segoe UI', 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #002b4f 0%, #004b7c 50%, #002b4f 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 24px 16px;
-        }
-        .card {
-            background: #ffffff;
-            border-radius: 20px;
-            max-width: 420px;
-            width: 100%;
-            overflow: hidden;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
-        }
-        .card-header {
-            background: linear-gradient(135deg, #002b4f, #004b7c);
-            padding: 28px 24px;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-        .card-header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: #d4af37;
-        }
-        .card-header h1 {
-            font-size: 19px;
-            font-weight: 700;
-            margin-bottom: 6px;
-            line-height: 1.4;
-        }
-        .card-header h2 {
-            font-size: 14px;
-            font-weight: 400;
-            opacity: 0.9;
-        }
-        .card-body {
-            padding: 24px;
-        }
-        .card-body p {
-            font-size: 14px;
-            color: #3a5068;
-            line-height: 1.7;
-            margin-bottom: 16px;
-            text-align: justify;
-        }
-        .highlight-text {
-            background: #fff9e8;
-            border-left: 3px solid #d4af37;
-            padding: 10px 14px;
-            border-radius: 8px;
-            margin: 16px 0;
-            font-size: 13px;
-            color: #5a4a1a;
-            line-height: 1.6;
-        }
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-top: 20px;
-        }
-        .btn {
-            display: block;
-            text-decoration: none;
-            text-align: center;
-            padding: 14px 20px;
-            border-radius: 12px;
-            font-size: 15px;
-            font-weight: 600;
-            transition: transform 0.15s, box-shadow 0.15s;
-        }
-        .btn:active {
-            transform: scale(0.97);
-        }
-        .btn-primary {
-            background: linear-gradient(135deg, #d4af37, #c49b2a);
-            color: #002b4f;
-            box-shadow: 0 4px 14px rgba(212,175,55,0.35);
-        }
-        .btn-secondary {
-            background: #eef3fc;
-            color: #003057;
-            border: 1px solid #d0daea;
-        }
-        .btn-label {
-            font-size: 11px;
-            font-weight: 400;
-            opacity: 0.7;
-            margin-left: 4px;
-        }
-        .contact {
-            margin-top: 20px;
-            text-align: center;
-            padding-top: 16px;
-            border-top: 1px solid #e8eff5;
-        }
-        .contact p {
-            font-size: 13px;
-            color: #5f7d9c;
-            margin-bottom: 4px;
-            text-align: center;
-        }
-        .contact strong {
-            color: #003057;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>岭启韶光 · 中山大学岭南学院2026级商业策划大赛</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  background:
+    radial-gradient(ellipse 75% 60% at 100% 0%,rgba(255,130,80,0.6) 0%,transparent 65%),
+    radial-gradient(ellipse 80% 65% at 0% 100%,rgba(110,195,220,0.6) 0%,transparent 65%),
+    radial-gradient(ellipse 55% 30% at 50% -5%,rgba(160,215,235,0.4) 0%,transparent 70%),
+    radial-gradient(ellipse 80% 50% at 50% 50%,rgba(255,243,220,0.3) 0%,transparent 70%),
+    linear-gradient(180deg,#f4fafd 0%,#fffaf2 50%,#fff5ec 100%);
+  color:#1a2a3a;overflow-x:hidden;
+}
+.landing{
+  width:100%;max-width:560px;padding:40px 24px;text-align:center;position:relative;z-index:1;
+}
+.badge-top{
+  font-size:13px;font-weight:700;color:#003057;letter-spacing:2px;margin-bottom:4px;
+}
+.badge-top-en{
+  font-size:10px;color:#4a6a82;letter-spacing:2px;margin-bottom:32px;
+}
+.main-title{
+  font-family:"STKaiti","KaiTi","楷体","PingFang SC",serif;
+  font-size:52px;font-weight:700;letter-spacing:6px;line-height:1.15;
+  background:linear-gradient(90deg,#1a6fa8 0%,#2a8fc4 35%,#d96a3a 65%,#c8623a 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  margin-bottom:6px;
+}
+.title-en{
+  font-size:11px;letter-spacing:4px;color:#4a6a82;margin-bottom:20px;
+}
+.divider{
+  display:flex;align-items:center;justify-content:center;gap:12px;margin:16px 0 20px;
+}
+.divider::before,.divider::after{
+  content:"";width:60px;height:1px;
+  background:linear-gradient(90deg,transparent,#c8a050,transparent);
+}
+.divider span{color:#c8a050;font-size:12px;}
+.subtitle{
+  font-size:17px;font-weight:600;color:#003057;letter-spacing:2px;margin-bottom:6px;
+}
+.subtitle-en{
+  font-size:10px;letter-spacing:3px;color:#6b8aa5;margin-bottom:28px;
+}
+.cfa-badge{
+  display:inline-block;padding:6px 18px;border:1px solid #c8a050;border-radius:20px;
+  font-size:12px;letter-spacing:2px;color:#c8623a;font-weight:600;
+  background:rgba(255,255,255,0.5);margin-bottom:36px;
+}
+.info-row{
+  display:flex;gap:12px;margin-bottom:36px;flex-wrap:wrap;justify-content:center;
+}
+.info-card{
+  background:rgba(255,255,255,0.7);border:0.5px solid rgba(200,160,80,0.3);
+  border-radius:12px;padding:12px 16px;flex:1;min-width:140px;
+}
+.info-card .label{font-size:9px;color:#8a9bb0;letter-spacing:1.5px;margin-bottom:4px;}
+.info-card .value{font-size:13px;font-weight:700;color:#003057;}
+.btn-group{display:flex;flex-direction:column;gap:14px;margin-bottom:28px;}
+.btn{
+  display:block;padding:16px 24px;border-radius:14px;text-decoration:none;
+  font-size:15px;font-weight:700;letter-spacing:1px;transition:all 0.25s;
+  border:none;cursor:pointer;
+}
+.btn-primary{
+  background:linear-gradient(135deg,#1a6fa8 0%,#2a8fc4 100%);color:#fff;
+  box-shadow:0 4px 14px rgba(26,111,168,0.3);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(26,111,168,0.4);}
+.btn-secondary{
+  background:rgba(255,255,255,0.8);color:#003057;border:1.5px solid #c8a050;
+}
+.btn-secondary:hover{transform:translateY(-2px);background:#fff;box-shadow:0 4px 14px rgba(200,160,80,0.2);}
+.btn-icon{font-size:18px;margin-right:8px;vertical-align:middle;}
+.footer-note{
+  font-size:11px;color:#8a9bb0;line-height:1.7;letter-spacing:0.5px;
+}
+.footer-note strong{color:#5f7d9c;}
+@media(max-width:380px){
+  .main-title{font-size:42px;letter-spacing:4px;}
+  .subtitle{font-size:15px;}
+}
+</style>
 </head>
 <body>
-<div class="card">
-    <div class="card-header">
-        <h1>🏆 中山大学岭南学院<br>2026级商业策划大赛</h1>
-        <h2>招商方案 · 诚邀合作</h2>
+<div class="landing">
+  <div class="badge-top">中山大学岭南学院</div>
+  <div class="badge-top-en">LINGNAN COLLEGE · SUN YAT-SEN UNIVERSITY</div>
+
+  <div class="main-title">岭启韶光</div>
+  <div class="title-en">LINGQI · SHIGUANG</div>
+
+  <div class="divider"><span>· · ·</span></div>
+
+  <div class="subtitle">2026级商业策划大赛</div>
+  <div class="subtitle-en">LINGNAN BUSINESS CASE COMPETITION 2026</div>
+
+  <div class="cfa-badge">"数智引擎，绿色向新" · 国元证券·CFA联合冠名</div>
+
+  <div class="info-row">
+    <div class="info-card">
+      <div class="label">TIME</div>
+      <div class="value">2026.09.06</div>
     </div>
-    <div class="card-body">
-        <p>中山大学岭南学院的新生商业策划大赛是华南地区最具影响力的MBA/MDE新生商业实战赛事。2026级赛事深度聚焦<strong>数字经济与AI应用、投资与财富管理</strong>，覆盖金融、科技、文旅、能源等领域。我们为企业提供<strong>高端人才精准触达、品牌权威背书、可落地商业方案与全媒体传播</strong>四大核心价值，诚邀各行业商协会、优秀领军企业共创新生态。</p>
-
-        <div class="highlight-text">
-            📌 赛事主题："数智引擎，无界创变"<br>
-            🎯 覆盖约200名中高层管理者精英<br>
-            🏛️ AACSB国际认证商学院背书
-        </div>
-
-        <div class="btn-group">
-            <a class="btn btn-primary" href="https://892959.github.io/zsdx-26ori-business-plan/mobile.html">
-                📱 查看招商方案（手机版）
-            </a>
-            <a class="btn btn-secondary" href="https://892959.github.io/zsdx-26ori-business-plan/desktop.html">
-                💻 查看招商方案（电脑版）
-            </a>
-        </div>
-
-        <div class="contact">
-            <p><strong>📞 招商洽谈</strong></p>
-            <p>学联外联部部长 邱梓涛</p>
-            <p>13288778829（微信同号）</p>
-        </div>
+    <div class="info-card">
+      <div class="label">VENUE</div>
+      <div class="value">广州丽思卡尔顿</div>
     </div>
+  </div>
+
+  <div class="btn-group">
+    <a href="mobile.html" class="btn btn-primary">
+      <span class="btn-icon">📱</span>手机版查看
+    </a>
+    <a href="desktop.html" class="btn btn-secondary">
+      <span class="btn-icon">💻</span>电脑版查看
+    </a>
+  </div>
+
+  <div class="footer-note">
+    <strong>中山大学岭南学院2026级ORI商策项目组</strong><br>
+    项目细则 · 2026年7月<br>
+    本细则最终解释权归ORI组委会所有
+  </div>
 </div>
 </body>
 </html>
