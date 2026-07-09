@@ -2,13 +2,13 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>中山大学岭南学院2026级商业策划大赛项目细则</title>
+<title>涓北澶у宀崡瀛﹂櫌2026绾у晢涓氱瓥鍒掑ぇ璧涢」鐩粏鍒?/title>
 <style>
 @page {
   size: A4;
   margin: 0;
   @bottom-center {
-    content: "中山大学岭南学院2026级商业策划大赛项目细则 · 第 " counter(page) " / " counter(pages) " 页";
+    content: "涓北澶у宀崡瀛﹂櫌2026绾у晢涓氱瓥鍒掑ぇ璧涢」鐩粏鍒?路 绗?" counter(page) " / " counter(pages) " 椤?;
     font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
     font-size: 9pt;
     color: #8a9bb0;
@@ -16,7 +16,7 @@
   }
 }
 
-/* 内容页用 A4 内边距（封面不限制）*/
+/* 鍐呭椤电敤 A4 鍐呰竟璺濓紙灏侀潰涓嶉檺鍒讹級*/
 @page :not(:first) {
   margin: 18mm 14mm 18mm 14mm;
 }
@@ -31,11 +31,11 @@ body {
   background: #fff;
 }
 
-/* ====== 封面页（"岭启韶光"主题：青蓝×赤橙流光）====== */
+/* ====== 灏侀潰椤碉紙"宀惎闊跺厜"涓婚锛氶潚钃澝楄丹姗欐祦鍏夛級====== */
 .cover {
   page-break-after: always;
-  width: 210mm;  /* A4 宽 */
-  height: 297mm; /* A4 高 */
+  width: 210mm;  /* A4 瀹?*/
+  height: 297mm; /* A4 楂?*/
   padding: 0;
   position: relative;
   overflow: hidden;
@@ -43,39 +43,39 @@ body {
   color: #1a2a3a;
 }
 
-/* 主视觉流光背景 —— 用径向渐变模拟青色/橙色光带交织 */
+/* 涓昏瑙夋祦鍏夎儗鏅?鈥斺€?鐢ㄥ緞鍚戞笎鍙樻ā鎷熼潚鑹?姗欒壊鍏夊甫浜ょ粐 */
 .cover-bg {
   position: absolute;
   inset: 0;
   background:
-    /* 右上赤橙光晕（更强）*/
+    /* 鍙充笂璧ゆ鍏夋檿锛堟洿寮猴級*/
     radial-gradient(ellipse 75% 60% at 100% 0%, rgba(255,130,80,0.75) 0%, rgba(255,160,110,0.45) 20%, rgba(255,180,130,0.20) 40%, transparent 65%),
-    /* 左下青蓝光晕（更强）*/
+    /* 宸︿笅闈掕摑鍏夋檿锛堟洿寮猴級*/
     radial-gradient(ellipse 80% 65% at 0% 100%, rgba(110,195,220,0.75) 0%, rgba(140,210,230,0.45) 20%, rgba(170,225,240,0.20) 40%, transparent 65%),
-    /* 顶部中央青蓝弧（光之门顶部）*/
+    /* 椤堕儴涓ぎ闈掕摑寮э紙鍏変箣闂ㄩ《閮級*/
     radial-gradient(ellipse 55% 30% at 50% -5%, rgba(160,215,235,0.55) 0%, transparent 70%),
-    /* 底部中央赤橙弧 */
+    /* 搴曢儴涓ぎ璧ゆ寮?*/
     radial-gradient(ellipse 65% 30% at 50% 105%, rgba(255,155,100,0.35) 0%, transparent 65%),
-    /* 中部柔和米黄过渡 */
+    /* 涓儴鏌斿拰绫抽粍杩囨浮 */
     radial-gradient(ellipse 80% 50% at 50% 50%, rgba(255,243,220,0.40) 0%, transparent 70%),
-    /* 底色淡米白 */
+    /* 搴曡壊娣＄背鐧?*/
     linear-gradient(180deg, #f4fafd 0%, #fffaf2 50%, #fff5ec 100%);
   z-index: 1;
 }
 
-/* 流光丝带 —— 模拟光之门那种斜向光带 */
+/* 娴佸厜涓濆甫 鈥斺€?妯℃嫙鍏変箣闂ㄩ偅绉嶆枩鍚戝厜甯?*/
 .cover-ribbon {
   position: absolute;
   inset: 0;
   z-index: 2;
   background-image:
-    /* 主青蓝光带（左下→右上）*/
+    /* 涓婚潚钃濆厜甯︼紙宸︿笅鈫掑彸涓婏級*/
     linear-gradient(115deg, transparent 28%, rgba(110,195,220,0.30) 42%, rgba(160,220,240,0.55) 50%, rgba(110,195,220,0.30) 58%, transparent 72%),
-    /* 主赤橙光带（叠加）*/
+    /* 涓昏丹姗欏厜甯︼紙鍙犲姞锛?/
     linear-gradient(115deg, transparent 35%, rgba(255,150,100,0.22) 46%, rgba(255,180,130,0.42) 52%, rgba(255,150,100,0.22) 58%, transparent 70%),
-    /* 反向青蓝丝带（次要）*/
+    /* 鍙嶅悜闈掕摑涓濆甫锛堟瑕侊級*/
     linear-gradient(75deg, transparent 45%, rgba(140,210,230,0.18) 60%, rgba(170,225,240,0.30) 68%, rgba(140,210,230,0.18) 76%, transparent 88%),
-    /* 中心纵向高光（光之门通道）*/
+    /* 涓績绾靛悜楂樺厜锛堝厜涔嬮棬閫氶亾锛?/
     linear-gradient(180deg, transparent 30%, rgba(255,255,255,0.25) 48%, rgba(255,255,255,0.40) 50%, rgba(255,255,255,0.25) 52%, transparent 70%);
   background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
   filter: blur(0.5mm);
@@ -83,7 +83,7 @@ body {
   mix-blend-mode: screen;
 }
 
-/* 顶角装饰线条 —— 模拟光之门入口 */
+/* 椤惰瑁呴グ绾挎潯 鈥斺€?妯℃嫙鍏変箣闂ㄥ叆鍙?*/
 .cover-corner {
   position: absolute;
   top: 12mm;
@@ -127,7 +127,7 @@ body {
   text-shadow: 0 0 1mm rgba(255,255,255,0.7);
 }
 
-/* 中心主视觉区 */
+/* 涓績涓昏瑙夊尯 */
 .cover-stage {
   position: absolute;
   top: 55mm;
@@ -143,7 +143,7 @@ body {
   padding: 0 24mm;
 }
 .cover-main-title {
-  font-family: "STKaiti", "KaiTi", "楷体", "PingFang SC", serif;
+  font-family: "STKaiti", "KaiTi", "妤蜂綋", "PingFang SC", serif;
   font-size: 72pt;
   font-weight: 700;
   letter-spacing: 8px;
@@ -206,7 +206,7 @@ body {
   background: rgba(255,255,255,0.6);
 }
 
-/* 底角元信息 */
+/* 搴曡鍏冧俊鎭?*/
 .cover-meta {
   position: absolute;
   bottom: 14mm;
@@ -250,11 +250,11 @@ body {
   letter-spacing: 1.5px;
 }
 
-/* 旧的蓝色封面元素保留作为后备 class（避免破坏）*/
+/* 鏃х殑钃濊壊灏侀潰鍏冪礌淇濈暀浣滀负鍚庡 class锛堥伩鍏嶇牬鍧忥級*/
 .cover-top { display: none; }
 .cover-bottom { display: none; }
 
-/* ====== 内容页 ====== */
+/* ====== 鍐呭椤?====== */
 .content {
   padding: 18mm 14mm;
 }
@@ -298,7 +298,7 @@ li { margin: 0.8mm 0; }
   break-inside: avoid;
 }
 
-/* ====== 表格 ====== */
+/* ====== 琛ㄦ牸 ====== */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -323,7 +323,7 @@ th {
 }
 tr:nth-child(even) td { background: #f5f8fc; }
 
-/* ====== 高亮框 ====== */
+/* ====== 楂樹寒妗?====== */
 .callout {
   background: #f0f7fe;
   border-left: 3pt solid #0077be;
@@ -344,7 +344,7 @@ tr:nth-child(even) td { background: #f5f8fc; }
 }
 .callout strong { color: #003057; }
 
-/* ====== 赛道卡 ====== */
+/* ====== 璧涢亾鍗?====== */
 .track-card {
   background: #fafcff;
   border: 0.5pt solid #dfe8f0;
@@ -367,7 +367,7 @@ tr:nth-child(even) td { background: #f5f8fc; }
 .tag-A { background: #e0eaf8; color: #1a3a6e; }
 .tag-B { background: #fff3cd; color: #7a5900; }
 
-/* ====== Day3 时间表 ====== */
+/* ====== Day3 鏃堕棿琛?====== */
 .day-table th { background: #003057; }
 .day-table td { text-align: center; }
 .day-table td:first-child {
@@ -387,7 +387,7 @@ tr:nth-child(even) td { background: #f5f8fc; }
   font-weight: 700;
 }
 
-/* ====== 页脚信息栏 ====== */
+/* ====== 椤佃剼淇℃伅鏍?====== */
 .footer-info {
   margin-top: 10mm;
   padding-top: 4mm;
@@ -415,361 +415,356 @@ tr:nth-child(even) td { background: #f5f8fc; }
 </head>
 <body>
 
-<!-- ============== 封面页（岭启韶光主题）============== -->
+<!-- ============== 灏侀潰椤碉紙宀惎闊跺厜涓婚锛?============= -->
 <div class="cover">
   <div class="cover-bg"></div>
   <div class="cover-ribbon"></div>
 
-  <!-- 顶部冠名/校徽区 -->
+  <!-- 椤堕儴鍐犲悕/鏍″窘鍖?-->
   <div class="cover-corner">
     <div>
-      <div class="crest">中山大学岭南学院</div>
-      <div class="crest-en">LINGNAN COLLEGE · SUN YAT-SEN UNIVERSITY</div>
+      <div class="crest">涓北澶у宀崡瀛﹂櫌</div>
+      <div class="crest-en">LINGNAN COLLEGE 路 SUN YAT-SEN UNIVERSITY</div>
     </div>
     <div>
-      <div class="tagline-zh">岭启韶光 · 在岭南，追远的第一束未来之光</div>
+      <div class="tagline-zh">宀惎闊跺厜 路 鍦ㄥ箔鍗楋紝杩借繙鐨勭涓€鏉熸湭鏉ヤ箣鍏?/div>
       <div class="tagline-en">LIGHT UP YOUR JOURNEY</div>
     </div>
   </div>
 
-  <!-- 中心主视觉 -->
+  <!-- 涓績涓昏瑙?-->
   <div class="cover-stage">
-    <div class="cover-main-title">岭启韶光</div>
-    <div class="cover-main-title-en">LINGQI · SHIGUANG</div>
-    <div class="cover-divider-ornament">· · ·</div>
-    <div class="cover-subtitle-zh">中山大学岭南学院2026级商业策划大赛</div>
-    <div class="cover-subtitle-en">— LINGNAN BUSINESS CASE COMPETITION 2026 —</div>
-    <div class="cover-cfa-badge">"数智引擎，绿色向新" · 国元证券·CFA联合冠名</div>
+    <div class="cover-main-title">宀惎闊跺厜</div>
+    <div class="cover-main-title-en">LINGQI 路 SHIGUANG</div>
+    <div class="cover-divider-ornament">路 路 路</div>
+    <div class="cover-subtitle-zh">涓北澶у宀崡瀛﹂櫌2026绾у晢涓氱瓥鍒掑ぇ璧?/div>
+    <div class="cover-subtitle-en">鈥?LINGNAN BUSINESS CASE COMPETITION 2026 鈥?/div>
+    <div class="cover-cfa-badge">"鏁版櫤寮曟搸锛岀豢鑹插悜鏂? 路 鍥藉厓璇佸埜路CFA鑱斿悎鍐犲悕</div>
   </div>
 
-  <!-- 底角元信息 -->
+  <!-- 搴曡鍏冧俊鎭?-->
   <div class="cover-meta">
     <div class="cover-meta-left">
-      <div><span class="label">时间 / TIME</span><strong>2026.09.06</strong>（Day 3）全天</div>
-      <div><span class="label">地点 / VENUE</span><strong>广州丽思卡尔顿酒店</strong></div>
-      <div><span class="label">冠名 / TITLE</span><strong>国元证券·CFA</strong> 联合冠名 · 高顿官方合作</div>
-    </div>
+      <div><span class="label">鏃堕棿 / TIME</span><strong>2026.09.06</strong>锛圖ay 3锛夊叏澶?/div>
+      <div><span class="label">鍦扮偣 / VENUE</span><strong>骞垮窞涓芥€濆崱灏旈】閰掑簵</strong></div>
+      <div><span class="label">鍐犲悕 / TITLE</span><strong>鍥藉厓璇佸埜路CFA</strong> 鑱斿悎鍐犲悕 路 楂橀】路閾惰仈骞夸笢瀹樻柟鍚堜綔</div>    </div>
     <div class="cover-meta-right">
-      <div class="title">项目细则</div>
-      <div class="small">PROJECT GUIDELINES · 2026.07</div>
+      <div class="title">椤圭洰缁嗗垯</div>
+      <div class="small">PROJECT GUIDELINES 路 2026.07</div>
     </div>
   </div>
 </div>
 
-<!-- ============== 内容页 ============== -->
+<!-- ============== 鍐呭椤?============== -->
 <div class="content">
 
 <div class="intro-note">
-<strong>关于本细则：</strong>本方案为2026年商业策划大赛<strong>执行版项目细则</strong>，嵌套在岭院原有ORI成熟运作机制中。<strong>国元证券</strong>与<strong>CFA深圳协会</strong>作为<strong>联合冠名方</strong>，国元证券提供核心现金赞助，CFA深圳协会输出命题方向、评分原则、品牌宣讲及奖品；<strong>高顿教育</strong>同步达成官方合作，提供CFA奖学金与教育激励；<strong>越声理财</strong>提供VIP会员权益作为赛事奖品。本细则为组委会执行依据。
-</div>
+<strong>鍏充簬鏈粏鍒欙細</strong>鏈柟妗堜负2026骞村晢涓氱瓥鍒掑ぇ璧?strong>鎵ц鐗堥」鐩粏鍒?/strong>锛屽祵濂楀湪宀櫌鍘熸湁ORI鎴愮啛杩愪綔鏈哄埗涓€?strong>鍥藉厓璇佸埜</strong>涓?strong>CFA娣卞湷鍗忎細</strong>浣滀负<strong>鑱斿悎鍐犲悕鏂?/strong>锛?strong>楂橀】鏁欒偛</strong>涓?strong>閾惰仈骞夸笢</strong>浣滀负<strong>瀹樻柟鍚堜綔鏂?/strong>鈥斺€旈珮椤挎暀鑲叉彁渚汣FA濂栧閲戯紙鍚獵FA鑰冭瘯璐瑰噺鍏嶏級銆佹暀鏉愬強璇剧▼鎶电敤鍒革紝閾惰仈骞夸笢鎻愪緵浜戦棯浠樹紭鎯犲埜绛夎禌浜嬮ギ鍝佹敮鎸侊紱<strong>CFA娣卞湷鍗忎細</strong>浠ヨ€冭瘯璐瑰噺鍏嶅舰寮忓弬涓庡瀛﹂噾鏀寔锛?strong>瓒婂０鐞嗚储</strong>鎻愪緵VIP浼氬憳鏉冪泭浣滀负璧涗簨濂栧搧銆傛湰缁嗗垯涓虹粍濮斾細鎵ц渚濇嵁銆?</div>
 
-<!-- 一、项目概述 -->
+<!-- 涓€銆侀」鐩杩?-->
 <div class="section">
-<h1 class="section-title">一、项目概述</h1>
-<p>商业策划大赛作为岭院ORI的<strong>传承项目</strong>，致力于为新生与跨届别学员提供商业实战演练平台。2026年赛事紧扣"数智引擎，绿色向新"主题，聚焦<strong>数字经济/AI应用</strong>与<strong>ESG/可持续发展</strong>两大方向，覆盖金融、科技、新能源、消费、文旅等产业领域。</p>
-<p>本届大赛由<strong>国元证券·CFA联合冠名</strong>，高顿教育同步达成官方合作，越声理财提供VIP会员奖品。首次采用"<strong>上下午双赛道、全天赛事</strong>"机制，上午聚焦MDE新生赛道（ESG方向），下午开放跨届别赛道（AI方向），配合CFA协会赛前15分钟品牌宣讲，<strong>最大化参赛覆盖面与品牌曝光</strong>。</p>
+<h1 class="section-title">涓€銆侀」鐩杩?/h1>
+<p>鍟嗕笟绛栧垝澶ц禌浣滀负宀櫌ORI鐨?strong>浼犳壙椤圭洰</strong>锛岃嚧鍔涗簬涓烘柊鐢熶笌璺ㄥ眾鍒鍛樻彁渚涘晢涓氬疄鎴樻紨缁冨钩鍙般€?026骞磋禌浜嬬揣鎵?鏁版櫤寮曟搸锛岀豢鑹插悜鏂?涓婚锛岃仛鐒?strong>鏁板瓧缁忔祹/AI搴旂敤</strong>涓?strong>ESG/鍙寔缁彂灞?/strong>涓ゅぇ鏂瑰悜锛岃鐩栭噾铻嶃€佺鎶€銆佹柊鑳芥簮銆佹秷璐广€佹枃鏃呯瓑浜т笟棰嗗煙銆?/p>
+<p>鏈眾澶ц禌鐢?strong>鍥藉厓璇佸埜路CFA鑱斿悎鍐犲悕</strong>锛岄珮椤挎暀鑲层€侀摱鑱斿箍涓滀綔涓哄畼鏂瑰悎浣滄柟鈥斺€旈珮椤挎彁渚汣FA濂栧閲戯紙鍚€冭瘯璐瑰噺鍏嶏級銆佹暀鏉愬強璇剧▼璧勬簮锛岄摱鑱斿箍涓滄彁渚涗簯闂粯浼樻儬鍒哥瓑璧涗簨鏀寔锛岃秺澹扮悊璐㈡彁渚沄IP浼氬憳濂栧搧銆傞娆￠噰鐢?<strong>涓婁笅鍗堝弻璧涢亾銆佸叏澶╄禌浜?/strong>"鏈哄埗锛屼笂鍗堣仛鐒DE鏂扮敓璧涢亾锛圗SG鏂瑰悜锛夛紝涓嬪崍寮€鏀捐法灞婂埆璧涢亾锛圓I鏂瑰悜锛夛紝閰嶅悎CFA娣卞湷鍗忎細璧涘墠15鍒嗛挓鍝佺墝瀹ｈ锛?strong>鏈€澶у寲鍙傝禌瑕嗙洊闈笌鍝佺墝鏇濆厜</strong>銆?/p>
 
 <div class="callout">
-<strong>赛事基本信息</strong>
+<strong>璧涗簨鍩烘湰淇℃伅</strong>
 <ul>
-<li><strong>时间：</strong>2026年9月6日（Day3）全天 8:00-18:30</li>
-<li><strong>地点：</strong>广州丽思卡尔顿酒店</li>
-<li><strong>指导单位：</strong>中山大学岭南学院专硕教育中心</li>
-<li><strong>组织单位：</strong>2026 ORI组委会 · 商策项目组</li>
-<li><strong>联合冠名方：</strong>国元证券 · CFA深圳协会（命题+评分+奖品+宣讲）</li>
-<li><strong>官方合作：</strong>高顿教育（CFA奖学金+教育激励）</li>
-<li><strong>奖品赞助：</strong>越声理财（VIP会员权益）</li>
-<li><strong>预计参赛人数：</strong>约200人（MDE新生约180人 + 本科生/其他届别约20+人）</li>
+<li><strong>鏃堕棿锛?/strong>2026骞?鏈?鏃ワ紙Day3锛夊叏澶?8:00-18:30</li>
+<li><strong>鍦扮偣锛?/strong>骞垮窞涓芥€濆崱灏旈】閰掑簵</li>
+<li><strong>鎸囧鍗曚綅锛?/strong>涓北澶у宀崡瀛﹂櫌涓撶鏁欒偛涓績</li>
+<li><strong>缁勭粐鍗曚綅锛?/strong>2026 ORI缁勫浼?路 鍟嗙瓥椤圭洰缁?/li>
+<li><strong>鑱斿悎鍐犲悕鏂癸細</strong>鍥藉厓璇佸埜 路 CFA娣卞湷鍗忎細</li>
+<li><strong>瀹樻柟鍚堜綔鏂癸細</strong>楂橀】鏁欒偛锛堟彁渚汣FA濂栧閲戝惈鑰冭瘯璐瑰噺鍏嶃€佹暀鏉愬強璇剧▼璧勬簮锛壜?閾惰仈骞夸笢锛堟彁渚涗簯闂粯浼樻儬鍒哥瓑楗搧鏀寔锛?/li>
+<li><strong>濂栧搧璧炲姪锛?/strong>瓒婂０鐞嗚储锛圴IP浼氬憳鏉冪泭锛?/li>
+<li><strong>棰勮鍙傝禌浜烘暟锛?/strong>绾?00浜猴紙MDE鏂扮敓绾?80浜?+ 鏈鐢?鍏朵粬灞婂埆绾?0+浜猴級</li>
 </ul>
 </div>
 </div>
 
-<!-- 二、赛道设计 -->
+<!-- 浜屻€佽禌閬撹璁?-->
 <div class="section">
-<h1 class="section-title">二、赛道设计（双赛道 · 覆盖广）</h1>
+<h1 class="section-title">浜屻€佽禌閬撹璁★紙鍙岃禌閬?路 瑕嗙洊骞匡級</h1>
 
 <div class="track-card track-A">
-  <span class="track-tag tag-A">赛道A · 上午MDE场</span>
-  <h3 class="sub-sub-title" style="color:#1a3a6e;margin-top:0">主题：可持续金融与ESG创新（数智引擎 · 绿色向新）</h3>
-  <p><strong>参赛对象：</strong>2026级MDE全体新生（预计约180人，随机分配10-12组）</p>
-  <p><strong>命题方向（联合冠名方把关）：</strong></p>
+  <span class="track-tag tag-A">璧涢亾A 路 涓婂崍MDE鍦?/span>
+  <h3 class="sub-sub-title" style="color:#1a3a6e;margin-top:0">涓婚锛氬彲鎸佺画閲戣瀺涓嶦SG鍒涙柊锛堟暟鏅哄紩鎿?路 缁胯壊鍚戞柊锛?/h3>
+  <p><strong>鍙傝禌瀵硅薄锛?/strong>2026绾DE鍏ㄤ綋鏂扮敓锛堥璁＄害180浜猴紝闅忔満鍒嗛厤10-12缁勶級</p>
+  <p><strong>鍛介鏂瑰悜锛堣仈鍚堝啝鍚嶆柟鎶婂叧锛夛細</strong></p>
   <ul>
-    <li>绿色金融产品设计：碳中和债券、ESG基金、转型金融工具</li>
-    <li>保险科技在能源风险管理中的应用</li>
-    <li>碳普惠与清洁能源资产数字化</li>
-    <li>ESG评级与上市公司价值——基于AI的ESG因子挖掘</li>
-    <li>企业ESG表现与融资成本——基于岭院/沪深300上市公司的实证研究</li>
+    <li>缁胯壊閲戣瀺浜у搧璁捐锛氱⒊涓拰鍊哄埜銆丒SG鍩洪噾銆佽浆鍨嬮噾铻嶅伐鍏?/li>
+    <li>淇濋櫓绉戞妧鍦ㄨ兘婧愰闄╃鐞嗕腑鐨勫簲鐢?/li>
+    <li>纰虫櫘鎯犱笌娓呮磥鑳芥簮璧勪骇鏁板瓧鍖?/li>
+    <li>ESG璇勭骇涓庝笂甯傚叕鍙镐环鍊尖€斺€斿熀浜嶢I鐨凟SG鍥犲瓙鎸栨帢</li>
+    <li>浼佷笟ESG琛ㄧ幇涓庤瀺璧勬垚鏈€斺€斿熀浜庡箔闄?娌繁300涓婂競鍏徃鐨勫疄璇佺爺绌?/li>
   </ul>
-  <p><strong>案例参照：</strong>结合一家真实能源/制造业上市公司，输出ESG驱动业务增长方案；预算可控，方案落地可执行。</p>
+  <p><strong>妗堜緥鍙傜収锛?/strong>缁撳悎涓€瀹剁湡瀹炶兘婧?鍒堕€犱笟涓婂競鍏徃锛岃緭鍑篍SG椹卞姩涓氬姟澧為暱鏂规锛涢绠楀彲鎺э紝鏂规钀藉湴鍙墽琛屻€?/p>
 </div>
 
 <div class="track-card track-B">
-  <span class="track-tag tag-B">赛道B · 下午跨届别场</span>
-  <h3 class="sub-sub-title" style="color:#7a5900;margin-top:0">主题：AI赋能与数字经济商业模式创新（数智引擎 · 无界创变）</h3>
-  <p><strong>参赛对象：</strong>中大本科生（中大各院系均可）+ 其他届别MDE/EMBA/往届校友（开放报名，预计20-40人，自由组队4-6组）</p>
-  <p><strong>命题方向（联合冠名方把关）：</strong></p>
+  <span class="track-tag tag-B">璧涢亾B 路 涓嬪崍璺ㄥ眾鍒満</span>
+  <h3 class="sub-sub-title" style="color:#7a5900;margin-top:0">涓婚锛欰I璧嬭兘涓庢暟瀛楃粡娴庡晢涓氭ā寮忓垱鏂帮紙鏁版櫤寮曟搸 路 鏃犵晫鍒涘彉锛?/h3>
+  <p><strong>鍙傝禌瀵硅薄锛?/strong>涓ぇ鏈鐢燂紙涓ぇ鍚勯櫌绯诲潎鍙級+ 鍏朵粬灞婂埆MDE/EMBA/寰€灞婃牎鍙嬶紙寮€鏀炬姤鍚嶏紝棰勮20-40浜猴紝鑷敱缁勯槦4-6缁勶級</p>
+  <p><strong>鍛介鏂瑰悜锛堣仈鍚堝啝鍚嶆柟鎶婂叧锛夛細</strong></p>
   <ul>
-    <li>AI Agent在金融场景的应用——投顾、风控、合规</li>
-    <li>大模型驱动的财富管理个性化方案</li>
-    <li>数字经济时代的新型消费商业模式（科技、文旅、零售）</li>
-    <li>AI+营销：精准客户触达、转化漏斗优化</li>
-    <li>量化投资与AI资产配置策略</li>
+    <li>AI Agent鍦ㄩ噾铻嶅満鏅殑搴旂敤鈥斺€旀姇椤俱€侀鎺с€佸悎瑙?/li>
+    <li>澶фā鍨嬮┍鍔ㄧ殑璐㈠瘜绠＄悊涓€у寲鏂规</li>
+    <li>鏁板瓧缁忔祹鏃朵唬鐨勬柊鍨嬫秷璐瑰晢涓氭ā寮忥紙绉戞妧銆佹枃鏃呫€侀浂鍞級</li>
+    <li>AI+钀ラ攢锛氱簿鍑嗗鎴疯Е杈俱€佽浆鍖栨紡鏂椾紭鍖?/li>
+    <li>閲忓寲鎶曡祫涓嶢I璧勪骇閰嶇疆绛栫暐</li>
   </ul>
-  <p><strong>组队规则：</strong>跨院、跨届别自由组队，每队3-5人，鼓励交叉学科。</p>
+  <p><strong>缁勯槦瑙勫垯锛?/strong>璺ㄩ櫌銆佽法灞婂埆鑷敱缁勯槦锛屾瘡闃?-5浜猴紝榧撳姳浜ゅ弶瀛︾銆?/p>
 </div>
 
 <div class="callout callout-cfa">
-<strong>双赛道设计的优势：</strong>
+<strong>鍙岃禌閬撹璁＄殑浼樺娍锛?/strong>
 <ol>
-<li>覆盖2026级MDE（主体）+ 本科生/校友/其他届别（增量），最大化覆盖面</li>
-<li>主题差异化（上午ESG+下午AI），体现岭院"数智+绿色"双轮驱动特色</li>
-<li>上下午两场独立评审，奖项独立评出，避免规模差异导致的公平性问题</li>
-<li>下午场可开放对外（中大非岭院校友/兄弟院校），强化岭院品牌外溢</li>
+<li>瑕嗙洊2026绾DE锛堜富浣擄級+ 鏈鐢?鏍″弸/鍏朵粬灞婂埆锛堝閲忥級锛屾渶澶у寲瑕嗙洊闈?/li>
+<li>涓婚宸紓鍖栵紙涓婂崍ESG+涓嬪崍AI锛夛紝浣撶幇宀櫌"鏁版櫤+缁胯壊"鍙岃疆椹卞姩鐗硅壊</li>
+<li>涓婁笅鍗堜袱鍦虹嫭绔嬭瘎瀹★紝濂栭」鐙珛璇勫嚭锛岄伩鍏嶈妯″樊寮傚鑷寸殑鍏钩鎬ч棶棰?/li>
+<li>涓嬪崍鍦哄彲寮€鏀惧澶栵紙涓ぇ闈炲箔闄㈡牎鍙?鍏勫紵闄㈡牎锛夛紝寮哄寲宀櫌鍝佺墝澶栨孩</li>
 </ol>
 </div>
 </div>
 
-<!-- 三、赛程时间表 -->
+<!-- 涓夈€佽禌绋嬫椂闂磋〃 -->
 <div class="section">
-<h1 class="section-title">三、赛程时间表（Day3 全天）</h1>
+<h1 class="section-title">涓夈€佽禌绋嬫椂闂磋〃锛圖ay3 鍏ㄥぉ锛?/h1>
 
-<h2 class="sub-title">3.1 关键时间节点（赛前筹备）</h2>
+<h2 class="sub-title">3.1 鍏抽敭鏃堕棿鑺傜偣锛堣禌鍓嶇澶囷級</h2>
 <table>
-<thead><tr><th style="width:16%">日期</th><th style="width:14%">时间</th><th style="width:18%">任务</th><th>具体内容</th></tr></thead>
+<thead><tr><th style="width:16%">鏃ユ湡</th><th style="width:14%">鏃堕棿</th><th style="width:18%">浠诲姟</th><th>鍏蜂綋鍐呭</th></tr></thead>
 <tbody>
-<tr><td>8月29日</td><td>20:00</td><td>商策组组建</td><td>组委会建赛事微信群，各ORI小组推选商策项目组长，进群截止，群昵称改为"商策X组+名字"</td></tr>
-<tr><td>8月31日</td><td>19:00-21:00</td><td>规则答疑</td><td>组长收集组员问题清单，21:00组委会线上统一答疑</td></tr>
-<tr><td>9月2日</td><td>22:00</td><td>中期材料提交</td><td>各组提交：队名、团队合照、商策题目、大纲</td></tr>
-<tr><td>9月5日</td><td>20:00</td><td>赛道B组队截止</td><td>本科生/校友/其他届别自由组队完成，提交组员信息</td></tr>
-<tr><td>9月6日</td><td>20:00</td><td>最终材料提交</td><td>①PDF版报告 ②PPT电子版汇报（用岭院模板） ③打包发至组委会邮箱，逾期扣分</td></tr>
+<tr><td>8鏈?9鏃?/td><td>20:00</td><td>鍟嗙瓥缁勭粍寤?/td><td>缁勫浼氬缓璧涗簨寰俊缇わ紝鍚凮RI灏忕粍鎺ㄩ€夊晢绛栭」鐩粍闀匡紝杩涚兢鎴锛岀兢鏄电О鏀逛负"鍟嗙瓥X缁?鍚嶅瓧"</td></tr>
+<tr><td>8鏈?1鏃?/td><td>19:00-21:00</td><td>瑙勫垯绛旂枒</td><td>缁勯暱鏀堕泦缁勫憳闂娓呭崟锛?1:00缁勫浼氱嚎涓婄粺涓€绛旂枒</td></tr>
+<tr><td>9鏈?鏃?/td><td>22:00</td><td>涓湡鏉愭枡鎻愪氦</td><td>鍚勭粍鎻愪氦锛氶槦鍚嶃€佸洟闃熷悎鐓с€佸晢绛栭鐩€佸ぇ绾?/td></tr>
+<tr><td>9鏈?鏃?/td><td>20:00</td><td>璧涢亾B缁勯槦鎴</td><td>鏈鐢?鏍″弸/鍏朵粬灞婂埆鑷敱缁勯槦瀹屾垚锛屾彁浜ょ粍鍛樹俊鎭?/td></tr>
+<tr><td>9鏈?鏃?/td><td>20:00</td><td>鏈€缁堟潗鏂欐彁浜?/td><td>鈶燩DF鐗堟姤鍛?鈶PT鐢靛瓙鐗堟眹鎶ワ紙鐢ㄥ箔闄㈡ā鏉匡級 鈶㈡墦鍖呭彂鑷崇粍濮斾細閭锛岄€炬湡鎵ｅ垎</td></tr>
 </tbody>
 </table>
 
-<h2 class="sub-title">3.2 Day3（9月6日）当天完整流程</h2>
+<h2 class="sub-title">3.2 Day3锛?鏈?鏃ワ級褰撳ぉ瀹屾暣娴佺▼</h2>
 
 <table class="day-table">
-<thead><tr><th style="width:18%">时段</th><th style="width:41%">赛道A（MDE新生）</th><th style="width:41%">赛道B（跨届别）</th></tr></thead>
+<thead><tr><th style="width:18%">鏃舵</th><th style="width:41%">璧涢亾A锛圡DE鏂扮敓锛?/th><th style="width:41%">璧涢亾B锛堣法灞婂埆锛?/th></tr></thead>
 <tbody>
 <tr>
 <td><strong>08:00-08:10</strong></td>
-<td colspan="2" class="merged">主持人开场 · 嘉宾介绍 · 规则介绍 · 国元证券·CFA联合冠名方致辞</td>
+<td colspan="2" class="merged">涓绘寔浜哄紑鍦?路 鍢夊浠嬬粛 路 瑙勫垯浠嬬粛 路 鍥藉厓璇佸埜路CFA鑱斿悎鍐犲悕鏂硅嚧杈?/td>
 </tr>
 <tr>
 <td><strong>08:10-12:00</strong></td>
-<td>赛道A各组按抽签顺序展示 + 评委问答（10-12组，每组10min展示+2min问答）</td>
-<td>（备场 + 上午自由准备）</td>
+<td>璧涢亾A鍚勭粍鎸夋娊绛鹃『搴忓睍绀?+ 璇勫闂瓟锛?0-12缁勶紝姣忕粍10min灞曠ず+2min闂瓟锛?/td>
+<td>锛堝鍦?+ 涓婂崍鑷敱鍑嗗锛?/td>
 </tr>
 <tr>
 <td><strong>12:00-12:15</strong></td>
-<td colspan="2" class="merged">评委点评 · 赛道A统分</td>
+<td colspan="2" class="merged">璇勫鐐硅瘎 路 璧涢亾A缁熷垎</td>
 </tr>
 <tr>
 <td><strong>12:15-13:30</strong></td>
-<td colspan="2" class="merged">午餐 + 赛道B组备场</td>
+<td colspan="2" class="merged">鍗堥 + 璧涢亾B缁勫鍦?/td>
 </tr>
 <tr>
 <td><strong>13:30-13:45</strong></td>
-<td colspan="2" class="merged highlight-cfa">⭐ <strong>CFA协会品牌宣讲（15分钟）</strong><br>主题：CFA考试体系与职业发展路径</td>
+<td colspan="2" class="merged highlight-cfa">猸?<strong>CFA娣卞湷鍗忎細鍝佺墝瀹ｈ锛?5鍒嗛挓锛?/strong><br>涓婚锛欳FA鑰冭瘯浣撶郴涓庤亴涓氬彂灞曡矾寰?/td>
 </tr>
 <tr>
 <td><strong>13:45-17:00</strong></td>
-<td>（备场 + 旁听）</td>
-<td>赛道B各组按抽签顺序展示 + 评委问答（4-6组，每组10min展示+2min问答）</td>
+<td>锛堝鍦?+ 鏃佸惉锛?/td>
+<td>璧涢亾B鍚勭粍鎸夋娊绛鹃『搴忓睍绀?+ 璇勫闂瓟锛?-6缁勶紝姣忕粍10min灞曠ず+2min闂瓟锛?/td>
 </tr>
 <tr>
 <td><strong>17:00-17:15</strong></td>
-<td colspan="2" class="merged">评委点评 · 赛道B统分</td>
+<td colspan="2" class="merged">璇勫鐐硅瘎 路 璧涢亾B缁熷垎</td>
 </tr>
 <tr>
 <td><strong>17:15-18:00</strong></td>
-<td colspan="2" class="merged highlight-final">🎉 <strong>颁奖典礼 · 合影</strong><br>双赛道分别颁奖：冠军/亚军/季军 + 单项奖<br>国元证券/CFA/高顿/越声理财代表颁发奖学金与奖品</td>
+<td colspan="2" class="merged highlight-final">馃帀 <strong>棰佸鍏哥ぜ 路 鍚堝奖</strong><br>鍙岃禌閬撳垎鍒濂栵細鍐犲啗/浜氬啗/瀛ｅ啗 + 鍗曢」濂?br>鍚勫啝鍚嶆柟涓庡悎浣滄柟浠ｈ〃棰佸彂濂栧閲戜笌濂栧搧</td>
 </tr>
 <tr>
 <td><strong>18:00-18:30</strong></td>
-<td colspan="2" class="merged">茶歇 · 自由交流 · 高顿书籍售卖</td>
+<td colspan="2" class="merged">鑼舵瓏 路 鑷敱浜ゆ祦 路 楂橀】涔︾睄鍞崠</td>
 </tr>
 </tbody>
 </table>
 </div>
 
-<!-- 四、评分细则 -->
+<!-- 鍥涖€佽瘎鍒嗙粏鍒?-->
 <div class="section">
-<h1 class="section-title">四、评分细则（沿用岭院成熟机制）</h1>
+<h1 class="section-title">鍥涖€佽瘎鍒嗙粏鍒欙紙娌跨敤宀櫌鎴愮啛鏈哄埗锛?/h1>
 
-<p>理论最高分<strong>100分</strong>，由现场评委打分平均分计算得出（去掉最高最低后取均值）。双赛道<strong>独立评分、独立排名</strong>。</p>
+<p>鐞嗚鏈€楂樺垎<strong>100鍒?/strong>锛岀敱鐜板満璇勫鎵撳垎骞冲潎鍒嗚绠楀緱鍑猴紙鍘绘帀鏈€楂樻渶浣庡悗鍙栧潎鍊硷級銆傚弻璧涢亾<strong>鐙珛璇勫垎銆佺嫭绔嬫帓鍚?/strong>銆?/p>
 
 <table>
-<thead><tr><th style="width:14%">模块</th><th>评分要点</th><th style="width:10%">权重</th><th style="width:18%">主导方</th></tr></thead>
+<thead><tr><th style="width:14%">妯″潡</th><th>璇勫垎瑕佺偣</th><th style="width:10%">鏉冮噸</th><th style="width:18%">涓诲鏂?/th></tr></thead>
 <tbody>
-<tr><td><strong>完整性</strong></td><td>内容全面性、解决方案及效益链条完整性</td><td style="text-align:center">15分</td><td>岭院评委</td></tr>
-<tr><td rowspan="5"><strong>专业性</strong></td><td>市场分析</td><td style="text-align:center">5分</td><td rowspan="5"><strong>CFA评委（持证人）主导</strong></td></tr>
-<tr><td>产品分析</td><td style="text-align:center">5分</td></tr>
-<tr><td>目标客户定位</td><td style="text-align:center">10分</td></tr>
-<tr><td>传播和推广</td><td style="text-align:center">10分</td></tr>
-<tr><td>数字技术应用合理性、可行性</td><td style="text-align:center">15分</td></tr>
-<tr><td><strong>创新性</strong></td><td>分析方法、方案、形式等的新颖性</td><td style="text-align:center">10分</td><td>岭院评委</td></tr>
-<tr><td><strong>问答表现</strong></td><td>逻辑清晰度、方案熟悉程度</td><td style="text-align:center">10分</td><td>CFA + 岭院联合</td></tr>
-<tr><td><strong>展示效果</strong></td><td>PPT设计、展示表现、演讲感染力</td><td style="text-align:center">15分</td><td>岭院评委</td></tr>
-<tr><td colspan="2" style="text-align:center"><strong>总分</strong></td><td style="text-align:center"><strong>100分</strong></td><td style="text-align:center">—</td></tr>
+<tr><td><strong>瀹屾暣鎬?/strong></td><td>鍐呭鍏ㄩ潰鎬с€佽В鍐虫柟妗堝強鏁堢泭閾炬潯瀹屾暣鎬?/td><td style="text-align:center">15鍒?/td><td>宀櫌璇勫</td></tr>
+<tr><td rowspan="5"><strong>涓撲笟鎬?/strong></td><td>甯傚満鍒嗘瀽</td><td style="text-align:center">5鍒?/td><td rowspan="5"><strong>CFA娣卞湷鍗忎細璇勫涓诲</strong></td></tr>
+<tr><td>浜у搧鍒嗘瀽</td><td style="text-align:center">5鍒?/td></tr>
+<tr><td>鐩爣瀹㈡埛瀹氫綅</td><td style="text-align:center">10鍒?/td></tr>
+<tr><td>浼犳挱鍜屾帹骞?/td><td style="text-align:center">10鍒?/td></tr>
+<tr><td>鏁板瓧鎶€鏈簲鐢ㄥ悎鐞嗘€с€佸彲琛屾€?/td><td style="text-align:center">15鍒?/td></tr>
+<tr><td><strong>鍒涙柊鎬?/strong></td><td>鍒嗘瀽鏂规硶銆佹柟妗堛€佸舰寮忕瓑鐨勬柊棰栨€?/td><td style="text-align:center">10鍒?/td><td>宀櫌璇勫</td></tr>
+<tr><td><strong>闂瓟琛ㄧ幇</strong></td><td>閫昏緫娓呮櫚搴︺€佹柟妗堢啛鎮夌▼搴?/td><td style="text-align:center">10鍒?/td><td>CFA + 宀櫌鑱斿悎</td></tr>
+<tr><td><strong>灞曠ず鏁堟灉</strong></td><td>PPT璁捐銆佸睍绀鸿〃鐜般€佹紨璁叉劅鏌撳姏</td><td style="text-align:center">15鍒?/td><td>宀櫌璇勫</td></tr>
+<tr><td colspan="2" style="text-align:center"><strong>鎬诲垎</strong></td><td style="text-align:center"><strong>100鍒?/strong></td><td style="text-align:center">鈥?/td></tr>
 </tbody>
 </table>
 
 <div class="callout callout-cfa">
-<strong>CFA评分原则（占总分40%，确保"课题有质量、有意义"）：</strong>
+<strong>CFA娣卞湷鍗忎細璇勫垎鍘熷垯锛堝崰鎬诲垎40%锛岀‘淇?璇鹃鏈夎川閲忋€佹湁鎰忎箟"锛夛細</strong>
 <ul>
-<li>金融逻辑严谨性：方案是否符合金融/经济规律，数据是否可追溯</li>
-<li>行业相关性：是否对真实行业痛点有深度洞察，避免空想</li>
-<li>研究规范性：方法论是否清晰，假设是否合理，结论是否有据</li>
-<li>社会价值：是否具备落地性、可持续性、社会价值（尤其ESG赛道）</li>
-<li>创新但不失严谨：在合规边界内的创新，避免过度技术堆砌</li>
+<li>閲戣瀺閫昏緫涓ヨ皑鎬э細鏂规鏄惁绗﹀悎閲戣瀺/缁忔祹瑙勫緥锛屾暟鎹槸鍚﹀彲杩芥函</li>
+<li>琛屼笟鐩稿叧鎬э細鏄惁瀵圭湡瀹炶涓氱棝鐐规湁娣卞害娲炲療锛岄伩鍏嶇┖鎯?/li>
+<li>鐮旂┒瑙勮寖鎬э細鏂规硶璁烘槸鍚︽竻鏅帮紝鍋囪鏄惁鍚堢悊锛岀粨璁烘槸鍚︽湁鎹?/li>
+<li>绀句細浠峰€硷細鏄惁鍏峰钀藉湴鎬с€佸彲鎸佺画鎬с€佺ぞ浼氫环鍊硷紙灏ゅ叾ESG璧涢亾锛?/li>
+<li>鍒涙柊浣嗕笉澶变弗璋細鍦ㄥ悎瑙勮竟鐣屽唴鐨勫垱鏂帮紝閬垮厤杩囧害鎶€鏈爢鐮?/li>
 </ul>
 </div>
 
-<h2 class="sub-title">4.1 加分项与扣分项</h2>
+<h2 class="sub-title">4.1 鍔犲垎椤逛笌鎵ｅ垎椤?/h2>
 <table>
-<thead><tr><th style="width:18%">类型</th><th>项目</th><th style="width:18%">分值</th></tr></thead>
+<thead><tr><th style="width:18%">绫诲瀷</th><th>椤圭洰</th><th style="width:18%">鍒嗗€?/th></tr></thead>
 <tbody>
-<tr><td rowspan="3" style="vertical-align:middle;text-align:center"><strong>加分项</strong></td><td>技术创新奖（前沿技术应用、算法优化）</td><td style="text-align:center">+10分</td></tr>
-<tr><td>最具创意奖（方案设计展现高度创意）</td><td style="text-align:center">+10分</td></tr>
-<tr><td>卓越演示奖（创新表现形式+专业感染力）</td><td style="text-align:center">+10分</td></tr>
-<tr><td rowspan="3" style="vertical-align:middle;text-align:center"><strong>扣分项</strong></td><td>展示超时30秒内</td><td style="text-align:center">-5分</td></tr>
-<tr><td>展示超时30秒以上（强制终止）</td><td style="text-align:center">-5分</td></tr>
-<tr><td>未按要求提交材料 / 展示当天迟到</td><td style="text-align:center">-10分</td></tr>
+<tr><td rowspan="3" style="vertical-align:middle;text-align:center"><strong>鍔犲垎椤?/strong></td><td>鎶€鏈垱鏂板锛堝墠娌挎妧鏈簲鐢ㄣ€佺畻娉曚紭鍖栵級</td><td style="text-align:center">+10鍒?/td></tr>
+<tr><td>鏈€鍏峰垱鎰忓锛堟柟妗堣璁″睍鐜伴珮搴﹀垱鎰忥級</td><td style="text-align:center">+10鍒?/td></tr>
+<tr><td>鍗撹秺婕旂ず濂栵紙鍒涙柊琛ㄧ幇褰㈠紡+涓撲笟鎰熸煋鍔涳級</td><td style="text-align:center">+10鍒?/td></tr>
+<tr><td rowspan="3" style="vertical-align:middle;text-align:center"><strong>鎵ｅ垎椤?/strong></td><td>灞曠ず瓒呮椂30绉掑唴</td><td style="text-align:center">-5鍒?/td></tr>
+<tr><td>灞曠ず瓒呮椂30绉掍互涓婏紙寮哄埗缁堟锛?/td><td style="text-align:center">-5鍒?/td></tr>
+<tr><td>鏈寜瑕佹眰鎻愪氦鏉愭枡 / 灞曠ず褰撳ぉ杩熷埌</td><td style="text-align:center">-10鍒?/td></tr>
 </tbody>
 </table>
 
-<p><strong>同分处理：</strong>如总得分相同，按"专业性"得分高者获胜；如仍一致，由"完整性+报告撰写+展示效果"得分高者获胜。</p>
+<p><strong>鍚屽垎澶勭悊锛?/strong>濡傛€诲緱鍒嗙浉鍚岋紝鎸?涓撲笟鎬?寰楀垎楂樿€呰幏鑳滐紱濡備粛涓€鑷达紝鐢?瀹屾暣鎬?鎶ュ憡鎾板啓+灞曠ず鏁堟灉"寰楀垎楂樿€呰幏鑳溿€?/p>
 </div>
 
-<!-- 五、奖项与奖品 -->
+<!-- 浜斻€佸椤逛笌濂栧搧 -->
 <div class="section">
-<h1 class="section-title">五、奖项设置与奖品</h1>
+<h1 class="section-title">浜斻€佸椤硅缃笌濂栧搧</h1>
 
-<h2 class="sub-title">5.1 赛道A（MDE新生 · 上午场）</h2>
+<h2 class="sub-title">5.1 璧涢亾A锛圡DE鏂扮敓 路 涓婂崍鍦猴級</h2>
 <table>
-<thead><tr><th style="width:18%">奖项</th><th style="width:12%">名额</th><th>奖品（国元证券+CFA+高顿+越声理财）</th></tr></thead>
+<thead><tr><th style="width:18%">濂栭」</th><th style="width:12%">鍚嶉</th><th>濂栧搧</th></tr></thead>
 <tbody>
-<tr><td><strong>冠军</strong></td><td style="text-align:center">1组</td><td>CFA一级考试费减免（约¥4,300/名额）+ Wind VIP年卡 + 高顿半价课程券 + 越声理财VIP会员 + 冠军证书</td></tr>
-<tr><td><strong>亚军</strong></td><td style="text-align:center">1组</td><td>高顿CFA奖学金（$600 USD抵扣）+ 高顿精品课程券 + 越声理财VIP会员 + 证书</td></tr>
-<tr><td><strong>季军</strong></td><td style="text-align:center">1组</td><td>高顿CFA从业教材 + 知识图谱 + 越声理财VIP会员 + 证书</td></tr>
-<tr><td><strong>技术创新 / 最具创意 / 卓越演示奖</strong></td><td style="text-align:center">各1组</td><td>高顿课程抵用券 + CFA周边纪念品 + 证书</td></tr>
-<tr><td><strong>优秀参与奖</strong></td><td style="text-align:center">若干</td><td>高顿新生CFA奖学金抽签名额（20个名额中除冠亚季外部分）</td></tr>
+<tr><td><strong>鍐犲啗</strong></td><td style="text-align:center">1缁?/td><td>楂橀】CFA濂栧閲戯紙鍚€冭瘯璐瑰噺鍏嶏級 + Wind VIP骞村崱 + 楂橀】璇剧▼鍒?+ 瓒婂０鐞嗚储VIP + 璇佷功</td></tr>
+<tr><td><strong>浜氬啗</strong></td><td style="text-align:center">1缁?/td><td>楂橀】CFA濂栧閲?+ 璇剧▼鍒?+ 瓒婂０鐞嗚储VIP + 璇佷功</td></tr>
+<tr><td><strong>瀛ｅ啗</strong></td><td style="text-align:center">1缁?/td><td>CFA鏁欐潗 + 瓒婂０鐞嗚储VIP + 璇佷功</td></tr>
+<tr><td><strong>鍗曢」濂?/strong></td><td style="text-align:center">鍚?缁?/td><td>楂橀】璇剧▼鎶电敤鍒?+ CFA鍛ㄨ竟 + 璇佷功</td></tr>
+<tr><td><strong>鍙備笌濂?/strong></td><td style="text-align:center">鑻ュ共</td><td>楂橀】CFA濂栧閲戞娊绛惧悕棰?/td></tr>
 </tbody>
 </table>
 
-<h2 class="sub-title">5.2 赛道B（跨届别 · 下午场）</h2>
+<h2 class="sub-title">5.2 璧涢亾B锛堣法灞婂埆 路 涓嬪崍鍦猴級</h2>
 <table>
-<thead><tr><th style="width:18%">奖项</th><th style="width:12%">名额</th><th>奖品</th></tr></thead>
+<thead><tr><th style="width:18%">濂栭」</th><th style="width:12%">鍚嶉</th><th>濂栧搧</th></tr></thead>
 <tbody>
-<tr><td><strong>冠军</strong></td><td style="text-align:center">1组</td><td>CFA一级考试费减免（¥4,300/名额）+ Wind VIP年卡 + 越声理财VIP会员 + 证书</td></tr>
-<tr><td><strong>亚军</strong></td><td style="text-align:center">1组</td><td>高顿CFA奖学金（$600 USD抵扣）+ 越声理财VIP会员 + 证书</td></tr>
-<tr><td><strong>季军</strong></td><td style="text-align:center">1组</td><td>CFA从业教材套装 + 越声理财VIP会员 + 证书</td></tr>
-<tr><td><strong>技术创新 / 最具创意 / 卓越演示奖</strong></td><td style="text-align:center">各1组</td><td>CFA周边 + 证书</td></tr>
-<tr><td><strong>跨届别特别奖</strong></td><td style="text-align:center">1组</td><td>鼓励跨院/跨校组队，颁发"最佳协作奖"</td></tr>
+<tr><td><strong>鍐犲啗</strong></td><td style="text-align:center">1缁?/td><td>楂橀】CFA濂栧閲戯紙鍚€冭瘯璐瑰噺鍏嶏級 + Wind VIP骞村崱 + 瓒婂０鐞嗚储VIP + 璇佷功</td></tr>
+<tr><td><strong>浜氬啗</strong></td><td style="text-align:center">1缁?/td><td>楂橀】CFA濂栧閲?+ 瓒婂０鐞嗚储VIP + 璇佷功</td></tr>
+<tr><td><strong>瀛ｅ啗</strong></td><td style="text-align:center">1缁?/td><td>CFA鏁欐潗 + 瓒婂０鐞嗚储VIP + 璇佷功</td></tr>
+<tr><td><strong>鍗曢」濂?/strong></td><td style="text-align:center">鍚?缁?/td><td>CFA鍛ㄨ竟 + 璇佷功</td></tr>
+<tr><td><strong>璺ㄥ眾鍒壒鍒</strong></td><td style="text-align:center">1缁?/td><td>棰佸彂"鏈€浣冲崗浣滃"</td></tr>
 </tbody>
 </table>
 
 <div class="callout callout-gold">
-<strong>奖品来源：</strong>国元证券承担<strong>赛事执行费用</strong>；CFA协会承担<strong>考试费减免 + Wind年卡 + CFA周边</strong>；高顿承担<strong>奖学金（$600×20）+ 教材 + 课程抵用券</strong>；越声理财承担<strong>VIP会员权益</strong>。四方奖品互补不重叠，避免资源浪费。
-</div>
+<strong>濂栧搧鏉ユ簮锛?/strong>鍥藉厓璇佸埜鎵挎媴<strong>璧涗簨鎵ц璐圭敤</strong>锛涢珮椤挎暀鑲叉彁渚?strong>CFA濂栧閲戯紙鍚獵FA鑰冭瘯璐瑰噺鍏嶏級+ Wind骞村崱 + CFA鏁欐潗 + 璇剧▼鎶电敤鍒?+ CFA鍛ㄨ竟</strong>锛汣FA娣卞湷鍗忎細浠?strong>鑰冭瘯璐瑰噺鍏?/strong>褰㈠紡鍙備笌濂栧閲戞敮鎸侊紱閾惰仈骞夸笢鎻愪緵<strong>浜戦棯浠樹紭鎯犲埜</strong>绛夎禌浜嬮ギ鍝佹敮鎸侊紱瓒婂０鐞嗚储鎻愪緵<strong>VIP浼氬憳鏉冪泭</strong>銆?</div>
 </div>
 
-<!-- 六、参赛要求 -->
+<!-- 鍏€佸弬璧涜姹?-->
 <div class="section">
-<h1 class="section-title">六、参赛要求与提交规范</h1>
+<h1 class="section-title">鍏€佸弬璧涜姹備笌鎻愪氦瑙勮寖</h1>
 
-<h2 class="sub-title">6.1 分组与组队</h2>
+<h2 class="sub-title">6.1 鍒嗙粍涓庣粍闃?/h2>
 <ol>
-<li><strong>赛道A（MDE新生）：</strong>沿用去年机制——ORI发布活动总则后，各ORI小组推选1名<strong>商策项目组长</strong>，由项目组长对接ORI商策大赛项目组委会，按时完成任务并提交方案。赛道A组数与ORI小组数一致（10-12组）。</li>
-<li><strong>赛道B（跨届别）：</strong>面向中大全日制本科生（中大各院系）+ 其他届别MDE/EMBA + 往届校友开放报名，每队3-5人，鼓励跨院跨校。组委会在8月底开放报名通道，9月5日组队截止。</li>
+<li><strong>璧涢亾A锛圡DE鏂扮敓锛夛細</strong>娌跨敤鍘诲勾鏈哄埗鈥斺€擮RI鍙戝竷娲诲姩鎬诲垯鍚庯紝鍚凮RI灏忕粍鎺ㄩ€?鍚?strong>鍟嗙瓥椤圭洰缁勯暱</strong>锛岀敱椤圭洰缁勯暱瀵规帴ORI鍟嗙瓥澶ц禌椤圭洰缁勫浼氾紝鎸夋椂瀹屾垚浠诲姟骞舵彁浜ゆ柟妗堛€傝禌閬揂缁勬暟涓嶰RI灏忕粍鏁颁竴鑷达紙10-12缁勶級銆?/li>
+<li><strong>璧涢亾B锛堣法灞婂埆锛夛細</strong>闈㈠悜涓ぇ鍏ㄦ棩鍒舵湰绉戠敓锛堜腑澶у悇闄㈢郴锛? 鍏朵粬灞婂埆MDE/EMBA + 寰€灞婃牎鍙嬪紑鏀炬姤鍚嶏紝姣忛槦3-5浜猴紝榧撳姳璺ㄩ櫌璺ㄦ牎銆傜粍濮斾細鍦?鏈堝簳寮€鏀炬姤鍚嶉€氶亾锛?鏈?鏃ョ粍闃熸埅姝€?/li>
 </ol>
 
-<h2 class="sub-title">6.2 提交物</h2>
-<p>每组需提交两份材料：</p>
+<h2 class="sub-title">6.2 鎻愪氦鐗?/h2>
+<p>姣忕粍闇€鎻愪氦涓や唤鏉愭枡锛?/p>
 <ol>
-<li><strong>PDF分析报告</strong>
+<li><strong>PDF鍒嗘瀽鎶ュ憡</strong>
 <ul>
-<li>字数：不少于 1,500 字</li>
-<li>格式：大标题方正小标宋简体2号，一级标题黑体，二级标题楷体，三级标题仿宋，小四号字号，1.5倍行距</li>
-<li>内容范围：综述、项目方案背景、研究对象分析、行业及市场调研、营销策划与市场推广、可行性分析、财务支出明细、转化和效果预期分析、潜在风险和缓释措施、总结和引用等</li>
+<li>瀛楁暟锛氫笉灏戜簬 1,500 瀛?/li>
+<li>鏍煎紡锛氬ぇ鏍囬鏂规灏忔爣瀹嬬畝浣?鍙凤紝涓€绾ф爣棰橀粦浣擄紝浜岀骇鏍囬妤蜂綋锛屼笁绾ф爣棰樹豢瀹嬶紝灏忓洓鍙峰瓧鍙凤紝1.5鍊嶈璺?/li>
+<li>鍐呭鑼冨洿锛氱患杩般€侀」鐩柟妗堣儗鏅€佺爺绌跺璞″垎鏋愩€佽涓氬強甯傚満璋冪爺銆佽惀閿€绛栧垝涓庡競鍦烘帹骞裤€佸彲琛屾€у垎鏋愩€佽储鍔℃敮鍑烘槑缁嗐€佽浆鍖栧拰鏁堟灉棰勬湡鍒嗘瀽銆佹綔鍦ㄩ闄╁拰缂撻噴鎺柦銆佹€荤粨鍜屽紩鐢ㄧ瓑</li>
 </ul>
 </li>
-<li><strong>PPT答辩材料</strong>
+<li><strong>PPT绛旇京鏉愭枡</strong>
 <ul>
-<li>格式：使用岭院ORI组委会指定模板</li>
-<li>原则：简明扼要、逻辑清晰、时间可控、重点突出</li>
+<li>鏍煎紡锛氫娇鐢ㄥ箔闄RI缁勫浼氭寚瀹氭ā鏉?/li>
+<li>鍘熷垯锛氱畝鏄庢壖瑕併€侀€昏緫娓呮櫚銆佹椂闂村彲鎺с€侀噸鐐圭獊鍑?/li>
 </ul>
 </li>
 </ol>
-<p><strong>提交时间：</strong>9月6日 20:00 前，提交后不得更改，逾期按规则扣分。提交当天7:30前需提交PDF和PPT打印稿给组委人员。</p>
+<p><strong>鎻愪氦鏃堕棿锛?/strong>9鏈?鏃?20:00 鍓嶏紝鎻愪氦鍚庝笉寰楁洿鏀癸紝閫炬湡鎸夎鍒欐墸鍒嗐€傛彁浜ゅ綋澶?:30鍓嶉渶鎻愪氦PDF鍜孭PT鎵撳嵃绋跨粰缁勫浜哄憳銆?/p>
 
-<h2 class="sub-title">6.3 现场展示规范</h2>
+<h2 class="sub-title">6.3 鐜板満灞曠ず瑙勮寖</h2>
 <ul>
-<li>每组上场人数上限 <strong>3人</strong>，需<strong>商务正装</strong>上台展示</li>
-<li>展示形式可自由发挥：演讲、情景展示、视频等</li>
-<li>展示主要语言为<strong>中文</strong></li>
-<li>每组展示时间 <strong>8-10分钟</strong>，评委提问 <strong>≤2分钟</strong>，跨组质询 <strong>≤1分钟</strong>（提问+回答合计 <strong>≤2分钟</strong>）</li>
+<li>姣忕粍涓婂満浜烘暟涓婇檺 <strong>3浜?/strong>锛岄渶<strong>鍟嗗姟姝ｈ</strong>涓婂彴灞曠ず</li>
+<li>灞曠ず褰㈠紡鍙嚜鐢卞彂鎸ワ細婕旇銆佹儏鏅睍绀恒€佽棰戠瓑</li>
+<li>灞曠ず涓昏璇█涓?strong>涓枃</strong></li>
+<li>姣忕粍灞曠ず鏃堕棿 <strong>8-10鍒嗛挓</strong>锛岃瘎濮旀彁闂?<strong>鈮?鍒嗛挓</strong>锛岃法缁勮川璇?<strong>鈮?鍒嗛挓</strong>锛堟彁闂?鍥炵瓟鍚堣 <strong>鈮?鍒嗛挓</strong>锛?/li>
 </ul>
 
-<h2 class="sub-title">6.4 原创性与合规</h2>
+<h2 class="sub-title">6.4 鍘熷垱鎬т笌鍚堣</h2>
 <ul>
-<li>所有方案必须为<strong>原创</strong>，不得侵犯他人知识产权；引用需如实注明</li>
-<li>展示内容积极向上，不得涉及违法/政治/宗教/性别/种族敏感内容</li>
-<li>发现造假/剽窃，一经查实<strong>立即取消资格</strong>或<strong>撤销奖项</strong></li>
+<li>鎵€鏈夋柟妗堝繀椤讳负<strong>鍘熷垱</strong>锛屼笉寰椾镜鐘粬浜虹煡璇嗕骇鏉冿紱寮曠敤闇€濡傚疄娉ㄦ槑</li>
+<li>灞曠ず鍐呭绉瀬鍚戜笂锛屼笉寰楁秹鍙婅繚娉?鏀挎不/瀹楁暀/鎬у埆/绉嶆棌鏁忔劅鍐呭</li>
+<li>鍙戠幇閫犲亣/鍓界獌锛屼竴缁忔煡瀹?strong>绔嬪嵆鍙栨秷璧勬牸</strong>鎴?strong>鎾ら攢濂栭」</strong></li>
 </ul>
 </div>
 
-<!-- 七、评委结构 -->
+<!-- 涓冦€佽瘎濮旂粨鏋?-->
 <div class="section">
-<h1 class="section-title">七、评委结构</h1>
+<h1 class="section-title">涓冦€佽瘎濮旂粨鏋?/h1>
 
 <table>
-<thead><tr><th style="width:18%">评委</th><th>来源</th><th style="width:12%">数量</th><th>评分主导维度</th></tr></thead>
+<thead><tr><th style="width:18%">璇勫</th><th>鏉ユ簮</th><th style="width:12%">鏁伴噺</th><th>璇勫垎涓诲缁村害</th></tr></thead>
 <tbody>
-<tr><td><strong>CFA评委</strong></td><td>CFA深圳协会推荐持证人</td><td style="text-align:center">2-3人</td><td>专业性（40%权重）、行业相关性、研究规范性</td></tr>
-<tr><td><strong>国元证券评委</strong></td><td>国元证券投行/研究部专家</td><td style="text-align:center">1-2人</td><td>行业落地性、资本市场视角、商业可行性</td></tr>
-<tr><td><strong>岭院学术评委</strong></td><td>岭院教授 / 副教授</td><td style="text-align:center">2人</td><td>完整性、创新性、学术严谨性</td></tr>
-<tr><td><strong>业界评委（高顿）</strong></td><td>高顿教育研究院</td><td style="text-align:center">1-2人</td><td>展示效果、人才培养潜力、方案落地性</td></tr>
-<tr><td><strong>岭院学生评委</strong></td><td>高年级MDE/MBA学生代表</td><td style="text-align:center">1-2人</td><td>展示表现、问答反应</td></tr>
+<tr><td><strong>CFA璇勫</strong></td><td>CFA娣卞湷鍗忎細鎺ㄨ崘鎸佽瘉浜?/td><td style="text-align:center">2-3浜?/td><td>涓撲笟鎬э紙40%鏉冮噸锛夈€佽涓氱浉鍏虫€с€佺爺绌惰鑼冩€?/td></tr>
+<tr><td><strong>鍥藉厓璇佸埜璇勫</strong></td><td>鍥藉厓璇佸埜鎶曡/鐮旂┒閮ㄤ笓瀹?/td><td style="text-align:center">1-2浜?/td><td>琛屼笟钀藉湴鎬с€佽祫鏈競鍦鸿瑙掋€佸晢涓氬彲琛屾€?/td></tr>
+<tr><td><strong>宀櫌瀛︽湳璇勫</strong></td><td>宀櫌鏁欐巿 / 鍓暀鎺?/td><td style="text-align:center">2浜?/td><td>瀹屾暣鎬с€佸垱鏂版€с€佸鏈弗璋ㄦ€?/td></tr>
+<tr><td><strong>涓氱晫璇勫锛堥珮椤匡級</strong></td><td>楂橀】鏁欒偛鐮旂┒闄?/td><td style="text-align:center">1-2浜?/td><td>灞曠ず鏁堟灉銆佷汉鎵嶅煿鍏绘綔鍔涖€佹柟妗堣惤鍦版€?/td></tr>
 </tbody>
 </table>
 
-<p>评委打分去掉最高分和最低分后取平均，作为该组现场得分。跨组质询环节由全体参赛组共同参与，营造<strong>岭院传统的高对抗、良性竞争氛围</strong>。</p>
+<p>璇勫鎵撳垎鍘绘帀鏈€楂樺垎鍜屾渶浣庡垎鍚庡彇骞冲潎锛屼綔涓鸿缁勭幇鍦哄緱鍒嗐€傝法缁勮川璇㈢幆鑺傜敱鍏ㄤ綋鍙傝禌缁勫叡鍚屽弬涓庯紝钀ラ€?strong>宀櫌浼犵粺鐨勯珮瀵规姉銆佽壇鎬х珵浜夋皼鍥?/strong>銆?/p>
 </div>
 
-<!-- 八、传播与露出 -->
+<!-- 鍏€佷紶鎾笌闇插嚭 -->
 <div class="section">
-<h1 class="section-title">八、品牌传播与露出方案</h1>
+<h1 class="section-title">鍏€佸搧鐗屼紶鎾笌闇插嚭鏂规</h1>
 
 <table>
-<thead><tr><th style="width:14%">阶段</th><th>国元证券露出</th><th>CFA露出</th><th>高顿露出</th><th>越声理财露出</th></tr></thead>
+<thead><tr><th style="width:12%">闃舵</th><th>鍥藉厓璇佸埜</th><th>CFA娣卞湷鍗忎細</th><th>楂橀】鏁欒偛</th><th>閾惰仈骞夸笢</th><th>瓒婂０鐞嗚储</th></tr></thead>
 <tbody>
-<tr><td><strong>赛前（8月）</strong></td><td>赛事官方名称联合冠名、公众号专题推文</td><td>赛事官方名称联合冠名、ORI官方群通知</td><td>官方合作方署名、ORI官方群通知</td><td>奖品赞助方署名</td></tr>
-<tr><td><strong>赛中（9月6日）</strong></td><td>主背景板Logo（首席位）、签到墙、评委席、宣讲10-15min</td><td>主背景板Logo、签到墙、获奖证书、评委席、专属CFA展架、宣讲15min</td><td>官方合作方Logo、书籍售卖摊位、新生礼品</td><td>奖品赞助方Logo、VIP权益颁奖</td></tr>
-<tr><td><strong>赛后</strong></td><td>获奖作品公众号专题、企业品牌新闻稿</td><td>获奖作品公众号专题、奖学金授予仪式、媒体新闻稿</td><td>奖学金授予仪式、新生CFA课程引导报名</td><td>VIP会员授予仪式、用户转化引导</td></tr>
+<tr><td><strong>璧涘墠锛?鏈堬級</strong></td><td>璧涗簨瀹樻柟鍚嶇О鑱斿悎鍐犲悕銆佸叕浼楀彿涓撻鎺ㄦ枃</td><td>璧涗簨瀹樻柟鍚嶇О鑱斿悎鍐犲悕銆丱RI瀹樻柟缇ら€氱煡</td><td>瀹樻柟鍚堜綔鏂圭讲鍚嶃€丱RI瀹樻柟缇ら€氱煡</td><td>瀹樻柟鍚堜綔鏂圭讲鍚?/td><td>濂栧搧璧炲姪鏂圭讲鍚?/td></tr>
+<tr><td><strong>璧涗腑锛?鏈?鏃ワ級</strong></td><td>涓昏儗鏅澘Logo锛堥甯綅锛夈€佺鍒板銆佽瘎濮斿腑銆佸璁?0-15min</td><td>涓昏儗鏅澘Logo銆佺鍒板銆佽幏濂栬瘉涔︺€佽瘎濮斿腑銆佷笓灞濩FA灞曟灦銆佸璁?5min</td><td>瀹樻柟鍚堜綔鏂筁ogo銆佷功绫嶅敭鍗栨憡浣嶃€佹柊鐢熺ぜ鍝?/td><td>瀹樻柟鍚堜綔鏂筁ogo銆佷簯闂粯浼樻儬鍒搁ギ鍝佽禐鍔?/td><td>濂栧搧璧炲姪鏂筁ogo銆乂IP鏉冪泭棰佸</td></tr>
+<tr><td><strong>璧涘悗</strong></td><td>鑾峰浣滃搧鍏紬鍙蜂笓棰樸€佷紒涓氬搧鐗屾柊闂荤</td><td>鑾峰浣滃搧鍏紬鍙蜂笓棰樸€佸獟浣撴柊闂荤</td><td>濂栧閲戞巿浜堜华寮忋€佹柊鐢烠FA璇剧▼寮曞鎶ュ悕</td><td>浜戦棯浠樼敤鎴疯浆鍖栧紩瀵笺€佸叕浼楀彿鑷磋阿</td><td>VIP浼氬憳鎺堜簣浠紡銆佺敤鎴疯浆鍖栧紩瀵?/td></tr>
 </tbody>
 </table>
 </div>
 
-<!-- 九、组委会联系方式 -->
+<!-- 涔濄€佺粍濮斾細鑱旂郴鏂瑰紡 -->
 <div class="section">
-<h1 class="section-title">九、组委会联系方式</h1>
+<h1 class="section-title">涔濄€佺粍濮斾細鑱旂郴鏂瑰紡</h1>
 
 <div class="callout">
-<strong>招商洽谈 / 细则咨询：</strong>
+<strong>鎷涘晢娲借皥 / 缁嗗垯鍜ㄨ锛?/strong>
 <ul>
-<li>学联外联部部长 <strong>邱梓涛</strong>：13288778829（微信同号）</li>
-<li>学联外联部 / 2026 ORI组委会</li>
-<li>指导老师：中山大学岭南学院专硕教育中心</li>
+<li>瀛﹁仈澶栬仈閮ㄩ儴闀?<strong>閭辨娑?/strong>锛?3288778829锛堝井淇″悓鍙凤級</li>
+<li>瀛﹁仈澶栬仈閮?/ 2026 ORI缁勫浼?/li>
+<li>鎸囧鑰佸笀锛氫腑灞卞ぇ瀛﹀箔鍗楀闄笓纭曟暀鑲蹭腑蹇?/li>
 </ul>
 </div>
 </div>
 
 <div class="footer-info">
-<strong>中山大学岭南学院2026级ORI商策项目组</strong><br>
-文档版本：项目细则 · 2026年7月<br>
-本细则最终解释权归ORI组委会所有
-</div>
+<strong>涓北澶у宀崡瀛﹂櫌2026绾RI鍟嗙瓥椤圭洰缁?/strong><br>
+鏂囨。鐗堟湰锛氶」鐩粏鍒?路 2026骞?鏈?br>
+鏈粏鍒欐渶缁堣В閲婃潈褰扥RI缁勫浼氭墍鏈?</div>
 
 </div>
 </body>
